@@ -92,6 +92,7 @@ Taucharts.api.tickFormat.add('m-y', function (x) {
   x: 'Date',
   y: 'Users',
   color: 'Browser',
+  label: 'Browser',
   data: getUsersData(),
   guide: {
     x: {
@@ -113,7 +114,6 @@ Taucharts.api.tickFormat.add('m-y', function (x) {
   plugins: [
     Taucharts.api.plugins.get('crosshair')(),
     Taucharts.api.plugins.get('diff-tooltip')(),
-    Taucharts.api.plugins.get('legend')(),
     Taucharts.api.plugins.get('annotations')({
       items: [{
         dim: 'Date',
@@ -132,7 +132,21 @@ Taucharts.api.tickFormat.add('m-y', function (x) {
         text: '2014',
         color: '#e96c4c'
       }]
-    })
+    }),
+    {
+      onRender: function (chart) {
+        // Fix labels colors
+        Array.prototype.slice.call(chart.getSVG().querySelectorAll('text.i-role-label'))
+          .forEach(function (el) {
+            if (el.textContent === 'Chrome') {
+              el.setAttribute('data-label', 'Chrome');
+            }
+            if (el.textContent === 'Firefox') {
+              el.setAttribute('data-label', 'Firefox');
+            }
+          });
+      }
+    }
   ],
 })).renderTo('#chart-users');
 function getUsersData() {
@@ -228,6 +242,7 @@ function getUsersCSV() {
   x: 'Date',
   y: 'Count',
   color: 'Action',
+  label: 'Action',
   data: getInstallsVsUninstallsData(),
   guide: {
     x: {
@@ -249,7 +264,6 @@ function getUsersCSV() {
   plugins: [
     Taucharts.api.plugins.get('crosshair')(),
     Taucharts.api.plugins.get('diff-tooltip')(),
-    Taucharts.api.plugins.get('legend')(),
     Taucharts.api.plugins.get('annotations')({
       items: [{
         dim: 'Date',
@@ -258,21 +272,35 @@ function getUsersCSV() {
         color: 'white',
         position: 'front',
       }]
-    })
+    }),
+    {
+      onRender: function (chart) {
+        // Fix labels colors
+        Array.prototype.slice.call(chart.getSVG().querySelectorAll('text.i-role-label'))
+          .forEach(function (el) {
+            if (el.textContent === 'Installs') {
+              el.setAttribute('data-label', 'Installs');
+            }
+            if (el.textContent === 'Uninstalls') {
+              el.setAttribute('data-label', 'Uninstalls');
+            }
+          });
+      }
+    }
   ],
 })).renderTo('#chart-installs-vs-uninstalls');
 function getInstallsVsUninstallsData() {
   return []
     .concat(getInstalls().map((function (ln) {
       return {
-        'Action': 'Install',
+        'Action': 'Installs',
         'Date': new Date(ln.split(',')[0] + '-01'),
         'Count': parseInt(ln.split(',')[1])
       };
     })))
     .concat(getUninstalls().map((function (ln) {
       return {
-        'Action': 'Uninstall',
+        'Action': 'Uninstalls',
         'Date': new Date(ln.split(',')[0] + '-01'),
         'Count': parseInt(ln.split(',')[1])
       };
@@ -508,14 +536,6 @@ function getData(){
 .i-role-datum~.i-role-label {
   fill: white !important;
 }
-.tau-chart__legend {
-  margin-right: 10px;
-  padding-left: 0;
-  width: 80px;
-}
-.tau-chart__legend__item {
-  padding-left: 32px;
-}
 #chart-donations {
   cursor: pointer;
   overflow: visible;
@@ -557,6 +577,14 @@ function getData(){
 }
 #chart-donations .cell.cell_very-small .cell__text::before {
   content: "";
+}
+text[data-label="Chrome"],
+text[data-label="Installs"] {
+  fill: #2c89a0 !important;
+}
+text[data-label="Firefox"],
+text[data-label="Uninstalls"] {
+  fill: #e96c4c !important;
 }
 </style>
 
