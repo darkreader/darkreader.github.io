@@ -216,6 +216,17 @@ if the feature was disabled in extension. In such case you have to re-enable pre
             </p>
         </article>
     </main>
+    <script>
+        document.querySelectorAll('video').forEach((video) => {
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

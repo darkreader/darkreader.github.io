@@ -197,6 +197,17 @@ Then we should make it possible to store site-specific settings.</p>
             </p>
         </article>
     </main>
+    <script>
+        document.querySelectorAll('video').forEach((video) => {
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
