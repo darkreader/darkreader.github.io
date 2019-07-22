@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ayuda – Dark Reader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../../images/darkreader-icon-256x256.png" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <meta name="theme-color" content="#141e24" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://darkreader.org/help/es/" />
+    <meta property="og:title" content="Ayuda – Dark Reader" />
+    <meta property="og:image" content="https://darkreader.org/images/darkreader-preview-medium.png" />
+</head>
+
+<body>
+    <header>
+        <a class="help-header-logo" href="../"></a>
+    </header>
+    <article>
+        <p>Este documento le guiará a través de las características de Dark Reader.</p>
+<ul>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contacts">Contactos</a></li>
+<li><a href="#top-section">Sección superior</a></li>
+<li><a href="#filter-settings">Ajustes de filtros</a></li>
+<li><a href="#custom-site-settings">Ajustes de sitios personalizados</a></li>
+<li><a href="#site-list">Lista de sitios</a></li>
+<li><a href="#more-tab">Pestaña Más</a></li>
+<li><a href="#theme-generation-modes">Modos de generación de temas</a></li>
+<li><a href="#bottom-section">Sección inferior</a></li>
+<li><a href="#using-dev-tools">Usando las herramientas para desarrolladores</a></li>
+</ul>
+<h2 id="top-section">Sección superior</h2>
+
+<img src="/images/help/darkreader-top-section.png" alt="Top section" style="width: 15rem;" />
+
+<ul>
+<li>El Botón de <strong>Alternar sitio</strong> añade el sitio actual a la lista de ignorados (o lo quita).</li>
+<li>El botón <strong>Sí/No</strong> habilita o deshabilita la extensión.</li>
+<li>Haga click en los enlaces debajo de los botones para <strong>modificar las teclas de acceso rápido</strong>. </li>
+<li>Si el botón de alternar está en gris, significa que el navegador restringe la inyección de scripts en la página actual.</li>
+</ul>
+<h2 id="filter-settings">Ajustes de filtros</h2>
+
+<img src="/images/help/darkreader-filter-settings.png" alt="Filter settings" style="width: 15rem;" />
+
+<p>Ajuste los valores de los filtros para que se ajusten mejor a los parámetros de la pantalla y a la iluminación de la habitación.</p>
+<h2 id="custom-site-settings">Ajustes de sitios personalizados</h2>
+
+<img src="/images/help/darkreader-custom-site-settings.png" alt="Custom settings" style="width: 15rem;" />
+
+<p>El botón <strong>Sólo para</strong> hace que los ajustes se apliquen sólo en el sitio web actual.</p>
+<p>Haga click en el botón, ajuste la configuración, haga click de nuevo para cancelar.</p>
+<h2 id="site-list">Lista de sitios</h2>
+
+<img src="/images/help/darkreader-site-list.png" alt="Site list" style="width: 15rem;" />
+
+<ul>
+<li>Utilice <strong>Invertir sólo listados</strong> si desea que Dark Reader funcione solo en los sitios web de la lista.</li>
+<li><strong>No invertir listados</strong> impedirá que la extensión funcione en los sitios web listados.</li>
+<li>Los valores posibles son <code>google.com, mail.google.com, google. *, Google.com / maps</code> etc.</li>
+<li>Al hacer click en el botón <strong>Alternar sitio</strong> se agrega el sitio a esta lista.</li>
+</ul>
+<h2 id="more-tab">Pestaña Más</h2>
+
+<img src="/images/help/darkreader-more-tab.png" alt="More tab" style="width: 15rem;" />
+
+<ul>
+<li><strong>Seleccione una fuente</strong> de la lista (o introduzca el nombre de la fuente en Firefox), haga clic en la <strong>casilla de verificación</strong>.</li>
+<li>Ajuste el <strong>Trazo del texto</strong>.</li>
+<li>Elija un <strong>Modo de generación del tema</strong>.</li>
+</ul>
+<h2 id="theme-generation-modes">Modos de generación de temas</h2>
+
+<figure>
+    <img src="/images/help/darkreader-theme-modes.png" alt="Filter+ vs. Static vs. Dynamic mode" />
+    <figcaption>Filter+ vs. Static vs. Dynamic mode</figcaption>
+</figure>
+
+<ul>
+<li><strong>Filtro</strong> es el modo inicial de Dark Reader y está basado en filtros CSS.</li>
+<li><em>Invierte toda la página*</em> y <strong>revierte algunas partes</strong>.
+Requiere recursos de la GPU.</li>
+<li><em>Rápido*</em> y poderoso, pero tiene varios problemas:
+desactiva el renderizado de subpíxeles del texto,
+invierte las partes ya oscuras en claras,
+causa retrasos en páginas grandes,
+falla al renderizar algunas páginas en Firefox.</li>
+<li><strong>Filtro+</strong> es igual que Filtro, pero se basa en filtros SVG personalizados
+y <strong>maneja mejor los colores</strong> haciendo las imágenes menos opacas.
+Funciona mal en Firefox.</li>
+<li><strong>Estático</strong> genera rápidamente una hoja de estilo básica.</li>
+<li><strong>Dinámico</strong> analiza en profundidad las hojas de estilo del sitio web, imágenes de fondo, gráficos vectoriales.
+Requiere algunos recursos en la carga inicial de la página,
+pero produce <strong>los mejores</strong> resultados visuales.
+El trabajo en este modo está en proceso,
+pero ya funciona bien para muchos sitios web modernos.</li>
+</ul>
+<h2 id="bottom-section">Sección inferior</h2>
+
+<img src="/images/help/darkreader-footer.png" alt="Bottom section" style="width: 15rem;" />
+
+<ul>
+<li>Lea nuestra <strong>política de privacidad</strong>, síganos en <strong>Twitter</strong>.</li>
+<li><strong>Donar</strong> - si te gusta la extensión, considera apoyar el desarrollo activo de Dark Reader.
+Crowdfunding está mantenido por Open Collective, que utiliza Stripe en el momento de realizar los pagos.</li>
+<li><strong>Avisos</strong> - notifica sobre notas de prensa y eventos importantes.</li>
+<li><strong>Herramientas</strong> - abre un editor de configuración para el modo de tema actual.</li>
+</ul>
+<h2 id="using-dev-tools">Usando las herramientas para desarrolladores</h2>
+
+<p>Si está familiarizado con los selectores de CSS, puede sugerir una solución para algunos sitios web.
+Lea cómo usar las herramientas para desarrolladores <a href="https://github.com/darkreader/darkreader#how-to-contribute">aquí</a>.</p>
+<h2 id="faq">FAQ</h2>
+
+<h4 id="la-extensión-solicita-permisos-para-leer-datos-del-sitio-web">La extensión solicita permisos para leer datos del sitio web</h4>
+<p>La extensión necesita estos permisos para poder analizar y modificar la apariencia del sitio web,
+determine si un sitio web está deshabilitado por su configuración o utilice reglas específicas del sitio.
+No insertamos anuncios y no recopilamos datos ni los enviamos a ninguna parte.
+La extensión es completamente de código abierto y no tiene ningún código ofuscado.
+Nuestra monetización es transparente y se basa en las donaciones de los usuarios.</p>
+<h4 id="la-página-de-la-tienda-de-extensiones-y-las-páginas-de-configuración-permanecen-en-blanco">La página de la tienda de extensiones y las páginas de configuración permanecen en blanco</h4>
+<p>La extensión no tiene acceso a estas páginas.</p>
+<h4 id="la-página-de-nueva-pestaña-y-el-tema-del-navegador-permanecen-en-blanco">La página de nueva pestaña y el tema del navegador permanecen en blanco</h4>
+<p>La extensión no puede cambiar la apariencia de una nueva pestaña o navegador (puede hacerlo desde Firefox 60).
+Instale un tema oscuro o una nueva extensión de pestaña desde la tienda de extensiones.</p>
+<h4 id="la-pantalla-parpadea-en-blanco-al-abrir-una-nueva-pestaña-o-al-navegar-por-un-sitio-web">La pantalla parpadea en blanco al abrir una nueva pestaña o al navegar por un sitio web</h4>
+<p>Antes de cargar un sitio web, Chrome muestra el color de fondo del tema por defecto,
+por lo que debe instalar algún tema oscuro de la tienda.</p>
+<h4 id="la-extensión-no-funciona-en-absoluto">La extensión no funciona en absoluto</h4>
+<p>Si tiene instaladas extensiones de modo oscuro similares, desactívelas, vuelva a cargar las pestañas.
+Haga clic en el icono de Dark Reader, verifique si el botón superior derecho está situado en <strong>On</strong>.
+Abra la pestaña <strong>Lista de sitios</strong>, verifique que esté seleccionado <strong>No invertir listados</strong>.
+Si nada ayuda, algo terrible ha sucedido, envíenos un correo electrónico.</p>
+<h4 id="el-sitio-web-se-muestra-incorrectamente-o-funciona-lento">El sitio web se muestra incorrectamente o funciona lento</h4>
+<p>Por favor, envíe la dirección del sitio web, una captura de pantalla, su sistema operativo y las versiones de su navegador a nuestro correo electrónico.
+Intentaremos investigar el motivo, al menos para un sitio web popular.
+También intente cambiar <strong>el modo de generación del tema</strong> o intente usar <strong>Modo claro</strong>.
+Compruebe que el sitio web no aparece en la pestaña <strong>Lista de sitios</strong>.</p>
+<h4 id="la-extensión-no-funciona-en-modo-incógnito">La extensión no funciona en modo incógnito</h4>
+<p>Abra la página <strong>chrome://extensions</strong>, busque <strong>Dark Reader</strong>, haga click en <strong>Permitir en incógnito</strong>.</p>
+<h4 id="la-extensión-no-funciona-para-archivos-locales">La extensión no funciona para archivos locales</h4>
+<p>Abra la página <strong>chrome://extensions</strong>, busque <strong>Dark Reader</strong>, haga click en <strong>Permitir el acceso a las URLs de los archivos</strong>.</p>
+<h4 id="el-sitio-web-completo-no-se-muestra-en-el-modo-de-filtro">El sitio web completo no se muestra en el modo de filtro</h4>
+<p>Si está utilizando Chrome para Mac OS, actualice Mac OS hasta 10.13, esto debería actualizar sus controladores de video.
+Si está utilizando Firefox, es muy probable que se trate de un error del navegador, utilice otro modo para tales sitios web.</p>
+<h2 id="contacts">Contactos</h2>
+
+<p>Para cualquier pregunta, envíe un correo electrónico a <a href="mailto:darkreaderapp@gmail.com">darkreaderapp@gmail.com</a>
+(English only)</p>
+
+    </article>
+</body>
+
+</html>
