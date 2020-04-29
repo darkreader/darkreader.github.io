@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Help – Dark Reader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../../images/darkreader-icon-256x256.png" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <meta name="theme-color" content="#141e24" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://darkreader.org/help/nl/" />
+    <meta property="og:title" content="Help – Dark Reader" />
+    <meta property="og:image" content="https://darkreader.org/images/darkreader-preview-medium.png" />
+</head>
+
+<body>
+    <header>
+        <a class="help-header-logo" href="../"></a>
+    </header>
+    <article>
+        <p>Dit document leidt u door de functies van Dark Reader.</p>
+<ul>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contacts">Contacten</a></li>
+<li><a href="#top-section">Top sectie</a></li>
+<li><a href="#filter-settings">Filter Instellingen</a></li>
+<li><a href="#custom-site-settings">Aangepaste site instellingen</a></li>
+<li><a href="#site-list">Site lijst</a></li>
+<li><a href="#more-tab">Meer tabblad</a></li>
+<li><a href="#theme-generation-modes">Thema-generatie modus</a></li>
+<li><a href="#bottom-section">Onderste gedeelte</a></li>
+<li><a href="#using-dev-tools">Gebruik van de ontwikkelaarshulpmiddelen</a></li>
+</ul>
+<h2 id="top-section">Top sectie</h2>
+
+<img src="/images/help/darkreader-top-section.png" alt="Top sectie" style="width: 15rem;" />
+
+<ul>
+<li><strong>Schakkel site</strong> knop voegt de huidige site toe aan de negeerlijst (of verwijdert deze van de lijst).</li>
+<li><strong>Aan/Uit</strong> schakelaar schakelt de uitbreiding in of uit.</li>
+<li>Klik op de links onder de knoppen om <strong>sneltoetsen te wijzigen</strong>.</li>
+<li>Als de toggle-knop grijs is, betekent dit dat de browser het injecteren van scripts in de huidige pagina niet toelaat.</li>
+</ul>
+<h2 id="filter-settings">Filter Instellingen</h2>
+
+<img src="/images/help/darkreader-filter-settings.png" alt="Filter instellingen" style="width: 15rem;" />
+
+<p>Pas de filterwaarden aan, die beter passen bij uw schermparameters en de verlichting in de ruimte.</p>
+<h2 id="custom-site-settings">Aangepaste site instellingen</h2>
+
+<img src="/images/help/darkreader-custom-site-settings.png" alt="Aangepaste site instellingen" style="width: 15rem;" />
+
+<p><strong>Alleen voor</strong> knop maakt instellingen die alleen op de huidige website moeten worden toegepast.</p>
+<p>Klik op de knop, pas de instellingen aan, klik nogmaals om te annuleren.</p>
+<h2 id="site-list">Site lijst</h2>
+
+<img src="/images/help/darkreader-site-list.png" alt="Site lijst" style="width: 15rem;" />
+
+<ul>
+<li>Gebruikt <strong>Alleen omkeren</strong> als u wilt dat Dark Reader alleen op vermelde websites werkt.</li>
+<li><strong>Niet omkeren</strong> zal voorkomen dat de uitbreiding werkt op genoemde websites.</li>
+<li>Mogelijke waarden zijn <code>google.com, mail.google.com, google.*, google.com/maps</code> etc.</li>
+<li>Door te klikken op de knop <strong>Schakel</strong> voegt u site toe aan deze lijst.</li>
+</ul>
+<h2 id="more-tab">Meer tabblad</h2>
+
+<img src="/images/help/darkreader-more-tab.png" alt="Meer tabblad" style="width: 15rem;" />
+
+<ul>
+<li><strong>Kies een lettertype</strong> uit de lijst (of voer de naam van het lettertype in op Firefox), klik op het selectievakje **.</li>
+<li>Pas de <strong>tekststreep</strong> aan.</li>
+<li>Kies een <strong>thema-generatie modus</strong>.</li>
+</ul>
+<h2 id="theme-generation-modes">Thema-generatie modus</h2>
+
+<figure>
+    <img src="/images/help/darkreader-theme-modes.png" alt="Filter+ vs. Static vs. Dynamic mode" />
+    <figcaption>Filter+ vs. Statisch vs. Dynamisch modus</figcaption>
+</figure>
+
+<ul>
+<li><strong>Filter</strong> is de initiële Dark Reader-modus op basis van CSS-filters.
+Het <strong>keert de hele pagina</strong> en <strong>keert sommige delen</strong> terug.
+Vereist GPU-bronnen.</li>
+<li><em>Snel*</em> en krachtig, maar heeft verschillende problemen:
+schakelt de tekst sub-pixelweergave uit,
+draait alle donkere delen om in naar lichte delen,
+veroorzaakt vertragingen op grote pagina&#39;s,
+slaagt er niet in om sommige pagina&#39;s in Firefox weer te geven.</li>
+<li><strong>Filter+</strong> het is hetzelfde als Filter, maar is gebaseerd op aangepaste SVG-filters
+en <strong>kleuren beter behandelt</strong> waardoor beelden minder saai worden.
+Werkt slecht in Firefox.</li>
+<li><strong>Statisch</strong> genereert snel een basis stylesheet.</li>
+<li><strong>Dynamisch</strong> analyseert de stylesheets van de website, de achtergrondafbeeldingen en de vectorafbeeldingen diepgaand.
+Vereist enkele bronnen bij de eerste paginalading,
+maar levert <strong>de beste</strong> visuele resultaten op.
+Het werk aan deze modus is in volle gang,
+maar het werkt al goed voor veel moderne websites.</li>
+</ul>
+<h2 id="bottom-section">Onderste gedeelte</h2>
+
+<img src="/images/help/darkreader-footer.png" alt="Onderste gedeelte" style="width: 15rem;" />
+
+<ul>
+<li>Read our <strong>privacy policy</strong>, follow us on <strong>Twitter</strong>.</li>
+<li><strong>Donate</strong> – if you like the extension, consider supporting the active Dark Reader development.
+Crowdfunding is held by Open Collective, which uses Stripe at the moment for helding payments.</li>
+<li><strong>News</strong> – notifies about release notes and important events.</li>
+<li><strong>Developer tools</strong> – opens a config editor for the current theme mode.</li>
+</ul>
+<h2 id="using-dev-tools">Gebruik van de ontwikkelaarshulpmiddelen</h2>
+
+<p>Als u bekend bent met CSS-selectoren, kunt u voor sommige websites een oplossing voorstellen.
+Lees hoe u de ontwikkelaarshulpmiddelen <a href="https://github.com/darkreader/darkreader#how-to-contribute">hier</a> kunt gebruiken.</p>
+<h2 id="faq">FAQ</h2>
+
+<h4 id="de-uitbreiding-vraagt-om-toestemming-om-de-gegevens-van-de-website-te-lezen">De uitbreiding vraagt om toestemming om de gegevens van de website te lezen</h4>
+<p>De uitbreiding heeft deze rechten nodig om het uiterlijk van de website te kunnen analyseren en wijzigen,
+bepaal of een website is uitgeschakeld door uw instellingen of gebruik site-specifieke regels.
+Wij voegen geen advertenties in en verzamelen of versturen geen gegevens.
+De extensie is volledig open source en heeft geen verdoezelde code.
+Onze monetisatie is transparant en is gebaseerd op de donaties van de gebruiker.</p>
+<h4 id="de-pagina-met-uitbreidingen-en-instellingen-blijven-wit">De pagina met uitbreidingen en instellingen blijven wit.</h4>
+<p>De uitbreiding heeft geen toegang tot deze pagina&#39;s.</p>
+<h4 id="nieuw-tabblad-en-browser-thema-blijven-wit">Nieuw tabblad en browser thema blijven wit</h4>
+<p>De extensie kan het uiterlijk van een nieuw tabblad of een nieuwe browser niet veranderen (dat kan wel sinds Firefox 60).
+Installeer een donker thema of een nieuwe tabbladuitbreiding van de extensions store.</p>
+<h4 id="scherm-knippert-wit-bij-het-openen-van-een-nieuw-tabblad-of-bij-het-navigeren-van-een-website">Scherm knippert wit bij het openen van een nieuw tabblad of bij het navigeren van een website</h4>
+<p>Voor het laden van een website toont Chrome standaard de achtergrondkleur van het thema,
+dus je moet een donker thema uit de winkel installeren.</p>
+<h4 id="de-uitbreiding-werkt-helemaal-niet">De uitbreiding werkt helemaal niet</h4>
+<p>Als u vergelijkbare extensies voor de donkere modus hebt geïnstalleerd, schakelt u deze uit en laadt u de tabbladen opnieuw.
+Klik op het pictogram Dark Reader, controleer of de knop rechtsboven is ingesteld op <strong>Aan</strong>.
+Open <strong>Site-lijst</strong> tabblad, controleer of <strong>Niet omkeren in de lijst</strong> is geselecteerd.
+Als niets helpt, is er iets vreselijks gebeurd, e-mail ons dan.</p>
+<h4 id="de-website-wordt-verkeerd-weergegeven-of-werkt-traag">De website wordt verkeerd weergegeven of werkt traag</h4>
+<p>Stuur het adres van de website, de schermafbeelding, uw besturingssysteem en de browserversies naar onze e-mail.
+We zullen proberen de reden te onderzoeken, in ieder geval voor een populaire website.
+Probeer ook de <strong>thema-generatie modus</strong> te wijzigen of probeer de <strong>lichtmodus</strong> te gebruiken.
+Controleer of de website niet voorkomt op het tabblad <strong>Site list</strong>.</p>
+<h4 id="de-extensie-werkt-niet-in-de-incognitomodus">De extensie werkt niet in de incognitomodus.</h4>
+<p>Open <strong>chrome://extension</strong> pagina, zoek <strong>Dark Reader</strong>, klik <strong>Toestaan in incognito</strong>.</p>
+<h4 id="de-extensie-werkt-niet-voor-lokale-bestanden">De extensie werkt niet voor lokale bestanden</h4>
+<p>Open <strong>chrome://extension</strong> pagina, zoek <strong>DarkReader</strong>, klik <strong>Toegang tot bestands-URL&#39;s</strong>.</p>
+<h4 id="hele-website-wordt-niet-weergegeven-in-de-filtermodus">Hele website wordt niet weergegeven in de filtermodus</h4>
+<p>Als u Chrome voor Mac OS gebruikt, werk dan Mac OS bij tot 10.13, dan moet dit uw videostuurprogramma&#39;s bijwerken.
+Als u Firefox gebruikt, is dit waarschijnlijk een browserfout, gebruik dan een andere modus voor dergelijke websites.</p>
+<h2 id="contacts">Contacten</h2>
+
+<p>Voor vragen kunt u mailen naar <a href="mailto:darkreaderapp@gmail.com">darkreaderapp@gmail.com</a>
+(English only)</p>
+
+    </article>
+</body>
+
+</html>

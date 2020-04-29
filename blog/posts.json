@@ -2,7 +2,8 @@
     {
         "id": "attention",
         "date": "2020-04-15T13:17Z",
-        "headline": "ATTENTION! Check if you were affected by malware clones"
+        "headline": "ATTENTION! Check if you were affected by malware clones",
+        "important": true
     },
     {
         "id": "dr-5-announcement",
