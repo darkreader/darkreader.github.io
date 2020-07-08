@@ -61,26 +61,15 @@ strong {
 }
 
 .feedback-link {
-    background-color: #316e7d;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 0 #53a1b3;
-    color: white;
+    color: #e96c4c;
     display: inline-block;
     font-size: 1.25rem;
     font-weight: bold;
-    line-height: 2.5rem;
-    padding: 0 0.75rem;
-    text-decoration: none;
-    transition: box-shadow 250ms;
-}
-
-.feedback-link:hover {
-    box-shadow: 0 0 0.75rem #316e7d;
 }
 
 .recommendations {
     align-items: center;
-    display: none;
+    display: flex;
     flex-direction: column;
     font-size: 1.25rem;
     margin-top: 1rem;
@@ -96,24 +85,21 @@ strong {
 }
 
 .honey-logo-link {
-    flex: none;
-}
-
-.honey-logo {
     background-image: url(/images/honey-logo.jpg);
     background-position: center;
     background-size: 125%;
     border-radius: 1.25rem;
-    box-shadow: 0 0 0 #53a1b3;
+    box-shadow: 0 0 0 0.0625rem hsla(0, 0%, 100%, 0), 0 0 0 #53a1b3;
     display: inline-block;
+    flex: none;
     height: 7rem;
     text-indent: -999rem;
     transition: box-shadow 250ms;
     width: 11rem;
 }
 
-.honey-logo-link:hover .honey-logo {
-    box-shadow: 0 0 0.5rem #53a1b3;
+.honey-logo-link:hover {
+    box-shadow: 0 0 0 0.0625rem hsla(0, 0%, 100%, 1), 0 0 0.75rem #53a1b3;
 }
 
 .honey-name {
