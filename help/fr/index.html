@@ -24,11 +24,11 @@
 <li><a href="#faq">FAQ</a></li>
 <li><a href="#contacts">Contacts</a></li>
 <li><a href="#top-section">Section supérieure</a></li>
-<li><a href="#filter-settings">Paramètres filtre</a></li>
-<li><a href="#custom-site-settings">Paramètres site particulier</a></li>
+<li><a href="#filter-settings">Paramètres des filtres</a></li>
+<li><a href="#custom-site-settings">Paramètres des sites particuliers</a></li>
 <li><a href="#site-list">Liste de sites</a></li>
-<li><a href="#more-tab">Onglet plus</a></li>
-<li><a href="#theme-generation-modes">Modes de génération de thème</a></li>
+<li><a href="#more-tab">Onglet &quot;Plus&quot;</a></li>
+<li><a href="#theme-generation-modes">Mode de génération de thèmes</a></li>
 <li><a href="#bottom-section">Section inférieure</a></li>
 <li><a href="#using-dev-tools">Utilisation des outils développeur</a></li>
 </ul>
@@ -38,21 +38,21 @@
 
 <ul>
 <li>Le bouton <strong>Basculer le site actuel</strong> ajoute le site à la liste d&#39;ignorés (ou l&#39;enlève).</li>
-<li>Le bouton <strong>On/Off</strong> met en marche ou en arrêt l&#39;extension.</li>
-<li>Clickez les liens sous les boutons pour <strong>modifier raccourcis</strong>.</li>
-<li>Si le boutons est gris, ceci signifie que le navigateur empêche l&#39;injection de scriptes dans la page actuelle.</li>
+<li>Le bouton <strong>Marche/Arrêt</strong> (On/Off) met en marche ou en arrêt l&#39;extension.</li>
+<li>Cliquez les liens sous les boutons pour <strong>modifier les raccourcis</strong>.</li>
+<li>Si le boutons est gris, cela signifie que le navigateur empêche l&#39;injection de scripts dans la page actuelle.</li>
 </ul>
-<h2 id="filter-settings">Paramètres filtre</h2>
+<h2 id="filter-settings">Paramètres des filtres</h2>
 
 <img src="/images/help/darkreader-filter-settings.png" alt="Filter settings" style="width: 15rem;" />
 
 <p>Ajuster les valeurs du filtre, pour mieux convenir aux écrans et éclairage de la salle.</p>
-<h2 id="custom-site-settings">Paramètres site particulier</h2>
+<h2 id="custom-site-settings">Paramètres des sites particuliers</h2>
 
 <img src="/images/help/darkreader-custom-site-settings.png" alt="Custom settings" style="width: 15rem;" />
 
 <p>Le bouton <strong>Uniquement pour</strong> applique les paramètres uniquement a ce site particulier.</p>
-<p>Clickez pour ajuster les paramètres, reclickez pour annuler.</p>
+<p>Cliquez pour ajuster les paramètres, recliquez pour annuler.</p>
 <h2 id="site-list">Liste de sites</h2>
 
 <img src="/images/help/darkreader-site-list.png" alt="Site list" style="width: 15rem;" />
@@ -61,40 +61,40 @@
 <li>Utilisez <strong>Uniquement inversé</strong> si vous souhaitez que Dark Reader fonctionne seulement sur les sites listés.</li>
 <li><strong>Non inversé</strong> empechera le fonctionnement de l&#39;extension sur les sites listés.</li>
 <li>Les valeurs possibles sont <code>google.com, mail.google.com, google.*, google.com/maps</code> etc.</li>
-<li>Clickez sur le bouton <strong>Basculer</strong> pour ajouter un site à cette liste.</li>
+<li>Cliquez sur le bouton <strong>Basculer</strong> pour ajouter un site à cette liste.</li>
 </ul>
-<h2 id="more-tab">Onglet plus</h2>
+<h2 id="more-tab">Onglet "Plus"</h2>
 
 <img src="/images/help/darkreader-more-tab.png" alt="More tab" style="width: 15rem;" />
 
 <ul>
-<li><strong>Sélectionnez une police</strong> de la liste (ou entrez le nom sur Firefox), clickez la <strong>checkbox</strong>.</li>
+<li><strong>Sélectionnez une police</strong> de la liste (ou entrez le nom sur Firefox), puis cochez la <strong>case</strong>.</li>
 <li>Ajustez le <strong>Trait du texte</strong>.</li>
 <li>Choisissez un <strong>Mode de génération de thème</strong>.</li>
 </ul>
 <h2 id="theme-generation-modes">Modes de génération de thème</h2>
 
 <figure>
-    <img src="/images/help/darkreader-theme-modes.png" alt="Filter+ vs. Static vs. Dynamic mode" />
-    <figcaption>Filter+ vs. Static vs. Dynamic mode</figcaption>
+    <img src="/images/help/darkreader-theme-modes.png" alt="Filtre+ vs. Statique vs. Mode Dynamique" />
+    <figcaption>Filtre+ vs. Statique vs. Mode Dynamique</figcaption>
 </figure>
 
 <ul>
 <li><strong>Filtre</strong> est le mode initial de Dark Reader basé sur les filtres CSS.
-Il <strong>inverse la couleure de la page entière</strong> et *<em>rétablit certaines parties *</em>.
+Il <strong>inverse la couleure de la page entière</strong> et <strong>rétablit certaines parties</strong>.
 Requires GPU resources.</li>
-<li><em>Rapide*</em> et puissant, mais a plusieurs problèmes:
+<li>*Rapide** et puissant, mais a plusieurs problèmes:
 désactive le rendu du texte sous-pixel,
 inverse les parties déjà sombres dans la lumière,
 provoque des retards sur les grandes pages,
 ne parvient pas à rendre certaines pages dans Firefox.</li>
-<li>** Filtre + ** identique à Filtre, mais basé sur des filtres SVG personnalisés
-et ** gère mieux les couleurs **, ce qui rend les images moins ternes.
+<li><strong>Filtre +</strong> identique à Filtre, mais basé sur des filtres SVG personnalisés
+et <strong>gère mieux les couleurs</strong>, ce qui rend les images moins ternes.
 Fonctionne mal dans Firefox.</li>
-<li>** Statique ** génère rapidement une feuille de style de base.</li>
-<li>** Dynamique ** analyse en profondeur les feuilles de style de sites Web, les images d’arrière-plan, les graphiques vectoriels.
+<li><strong>Statique</strong> génère rapidement une feuille de style de base.</li>
+<li><strong>Dynamique</strong> analyse en profondeur les feuilles de style de sites Web, les images d’arrière-plan, les graphiques vectoriels.
 Requiert des ressources lors du chargement initial de la page,
-mais produit ** les ** meilleurs résultats visuels.
+mais produit <strong>les</strong> meilleurs résultats visuels.
 Le travail sur ce mode est en cours,
 mais cela fonctionne déjà bien pour de nombreux sites Web modernes.</li>
 </ul>
@@ -131,18 +131,18 @@ Installez un thème sombre ou une nouvelle extension d&#39;onglet à partir du m
 vous devez donc installer un thème sombre à partir du magasin.</p>
 <h4 id="lextension-ne-fonctionne-pas-du-tout">L&#39;extension ne fonctionne pas du tout</h4>
 <p>Si vous avez installé des extensions de mode noir similaires, désactivez-les, rechargez les onglets.
-Cliquez sur l&#39;icône Dark Reader, vérifiez si le bouton en haut à droite est défini sur ** On <strong>.
-Ouvrez l&#39;onglet ** Liste de sites *<em>, vérifiez que *</em>Pas inverser la liste</strong> est sélectionné.
+Cliquez sur l&#39;icône Dark Reader, vérifiez si le bouton en haut à droite est défini sur <strong>On</strong>.
+Ouvrez l&#39;onglet <strong>Liste de sites</strong>, vérifiez que <strong>Non inversé</strong> est sélectionné.
 Si rien ne vous aide, quelque chose de terrible est arrivé, envoyez-nous un courrier électronique.</p>
 <h4 id="le-site-web-nest-pas-affiché-correctement-ou-fonctionne-lentement">Le site Web n&#39;est pas affiché correctement ou fonctionne lentement</h4>
 <p>S&#39;il vous plaît, envoyez l&#39;adresse de votre site Web, votre capture d&#39;écran, votre version du système d&#39;exploitation et de votre navigateur à notre adresse e-mail.
 Nous allons essayer de rechercher la raison, au moins pour un site Web populaire.
-Essayez également de changer ** le mode de génération de thèmes ** ou d&#39;utiliser <strong>le mode Lumière</strong>.
+Essayez également de changer <strong>le mode de génération de thèmes</strong> ou d&#39;utiliser <strong>le mode Light</strong>.
 Vérifiez que le site Web n&#39;est pas répertorié sous l&#39;onglet <strong>Liste de sites</strong>.</p>
 <h4 id="lextension-ne-fonctionne-pas-en-mode-navigation-privée">L&#39;extension ne fonctionne pas en mode navigation privée</h4>
-<p>Ouvrez ** chrome: // extensions ** page, recherchez ** Dark Reader <strong>, cliquez sur ** Autoriser en mode navigation privée</strong>.</p>
+<p>Ouvrez <strong>chrome://extensions</strong> page, recherchez <strong>Dark Reader</strong>, cliquez sur <strong>Autoriser en mode navigation privée</strong>.</p>
 <h4 id="lextension-ne-fonctionne-pas-pour-les-fichiers-locaux">L&#39;extension ne fonctionne pas pour les fichiers locaux</h4>
-<p>Ouvrez ** chrome: // extensions ** page, recherchez ** Dark Reader <strong>, cliquez sur ** Autoriser l&#39;accès aux URL de fichiers</strong>.</p>
+<p>Ouvrez <strong>chrome://extensions</strong> page, recherchez <strong>Dark Reader</strong>, cliquez sur <strong>Autoriser l&#39;accès aux URL de fichiers</strong>.</p>
 <h4 id="tout-le-site-nest-pas-affiché-en-mode-filtre">Tout le site n&#39;est pas affiché en mode filtre</h4>
 <p>Si vous utilisez Chrome pour Mac OS, mettez à jour Mac OS jusqu&#39;à la version 10.13, ce qui devrait mettre à jour vos pilotes vidéo.
 Si vous utilisez Firefox, il s&#39;agit probablement d&#39;un bogue de navigateur. Utilisez un autre mode pour ces sites.</p>
@@ -151,7 +151,13 @@ Si vous utilisez Firefox, il s&#39;agit probablement d&#39;un bogue de navigateu
 <p>Toutes questions (nous comprenons seulement l&#39;anglais) peuvent être envoyées par e-mail à <a href="mailto:darkreaderapp@gmail.com">darkreaderapp@gmail.com</a></p>
 
     </article>
-    <aside>
+    <aside class="rec-inplace">
+        <strong>Congratulations on installing Dark Reader!</strong>
+        Also try the extension <a href="https://www.joinhoney.com/darkreader" class="rec-inplace-h">Honey</a>.
+        Automatically apply coupon codes when you purchase online.
+        <a href="https://www.joinhoney.com/darkreader">Learn more</a>.
+    </aside>
+    <aside class="rec-side">
         <h2 class="rec-heading">
             Support us
         </h2>
