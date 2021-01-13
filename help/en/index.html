@@ -19,7 +19,7 @@
         <a class="help-header-logo" href="../"></a>
     </header>
     <article class="page-grid-content">
-        <p>This document will guide you through Dark Reader features.</p>
+        <p>This document will guide you through the features of Dark Reader.</p>
 <ul>
 <li><a href="#faq">FAQ</a></li>
 <li><a href="#contacts">Contacts</a></li>
@@ -37,22 +37,22 @@
 <img src="/images/help/darkreader-top-section.png" alt="Top section" style="width: 15rem;" />
 
 <ul>
-<li><strong>Toggle site</strong> button adds current site into ignore list (or removes from there).</li>
+<li><strong>Toggle site</strong> button adds the current site into the ignore list (or removes it from there).</li>
 <li><strong>On/Off</strong> switch enables or disables the extension.</li>
-<li>Click on the links under the buttons to <strong>modify hotkeys</strong>.</li>
-<li>If the toggle button is greyed-out, it means that browser restricts injecting scripts into current page.</li>
+<li>Click on the links under the buttons to <strong>modify the hotkeys</strong> for the extension.</li>
+<li>Note: If the toggle button is greyed-out, it means that browser restricts injecting scripts into current page.</li>
 </ul>
 <h2 id="filter-settings">Filter settings</h2>
 
 <img src="/images/help/darkreader-filter-settings.png" alt="Filter settings" style="width: 15rem;" />
 
-<p>Adjust the filter values, that better fit your screen parameters and lighting in the room.</p>
+<p>Adjust the mode, brightness, contrast, sepia, and saturation (&quot;grayscale&quot;) settings. This can be used to better suit your screen parameters and the lighting in the room.</p>
 <h2 id="custom-site-settings">Custom site settings</h2>
 
 <img src="/images/help/darkreader-custom-site-settings.png" alt="Custom settings" style="width: 15rem;" />
 
-<p><strong>Only for</strong> button makes settings to be applied to the current website only.</p>
-<p>Click the button, adjust the settings, click again to cancel.</p>
+<p>The <strong>Only for</strong> button determines whether the above filter settings should only be applied to the current website.</p>
+<p>To use, first click the button (which will become highlighted), then adjust the settings as desired for the current website. Click the button again to cancel.</p>
 <h2 id="site-list">Site list</h2>
 
 <img src="/images/help/darkreader-site-list.png" alt="Site list" style="width: 15rem;" />
@@ -60,8 +60,8 @@
 <ul>
 <li>Use <strong>Invert listed only</strong> if you wish Dark Reader to work only on listed websites.</li>
 <li><strong>Not invert listed</strong> will prevent the extension from working on listed websites.</li>
-<li>Possible values are <code>google.com, mail.google.com, google.*, google.com/maps</code> etc.</li>
-<li>Clicking on <strong>Toggle</strong> button adds site into this list.</li>
+<li>Possible patterns for values are <code>google.com, mail.google.com, google.*, google.com/maps</code> etc.</li>
+<li>Clicking the <strong>Toggle</strong> button (in <a href="#top-section">Top section</a>) adds the current site into this list.</li>
 </ul>
 <h2 id="more-tab">More tab</h2>
 
@@ -70,7 +70,7 @@
 <ul>
 <li><strong>Pick a font</strong> from list (or enter font name on Firefox), click the <strong>checkbox</strong>.</li>
 <li>Adjust the <strong>text stroke</strong>.</li>
-<li>Choose a <strong>theme generation mode</strong>.</li>
+<li>Select a <strong>theme generation mode</strong>.</li>
 </ul>
 <h2 id="theme-generation-modes">Theme generation modes</h2>
 
@@ -80,21 +80,21 @@
 </figure>
 
 <ul>
-<li><strong>Filter</strong> is initial Dark Reader mode based on CSS filters.
-It <strong>inverts the whole page</strong> and <strong>reverts some parts</strong> back.
-Requires GPU resources.</li>
-<li>*Fast** and powerful, but has several issues:
-disables text sub-pixel rendering,
+<li><strong>Filter</strong> is the initial Dark Reader mode based on CSS filters.
+It <em>inverts the whole page</em> and <em>reverts some parts</em> back.
+Requires GPU resources.
+It is <em>fast</em> and powerful, but has several issues:
+it disables text sub-pixel rendering,
 inverts already dark parts into light,
 causes lags on large pages,
-fails to render some pages in Firefox.</li>
-<li><strong>Filter+</strong> it the same as Filter, but is based on custom SVG filters
-and <strong>handles colors better</strong> making images less dull.
-Works bad in Firefox.</li>
+and fails to render some pages in Firefox.</li>
+<li><strong>Filter+</strong> is the same as Filter, but is based on custom SVG filters
+and <em>handles colors better</em> making images less dull.
+Works poorly in Firefox.</li>
 <li><strong>Static</strong> rapidly generates a basic stylesheet.</li>
-<li><strong>Dynamic</strong> deeply analyzes website stylesheets, background images, vector graphics.
+<li><strong>Dynamic</strong> deeply analyzes website stylesheets, background images, and vector graphics.
 Requires some resources on initial page load,
-but produces <strong>the best</strong> visual results.
+but produces <em>the best</em> visual results.
 The work on this mode is in progress,
 but it already works well for many modern websites.</li>
 </ul>
@@ -103,42 +103,42 @@ but it already works well for many modern websites.</li>
 <img src="/images/help/darkreader-footer.png" alt="Bottom section" style="width: 15rem;" />
 
 <ul>
-<li>Read our <strong>privacy policy</strong>, follow us on <strong>Twitter</strong>.</li>
-<li><strong>Donate</strong> – if you like the extension, consider supporting the active Dark Reader development.
-Crowdfunding is held by Open Collective, which uses Stripe at the moment for helding payments.</li>
+<li>Read our <strong>privacy policy</strong>, follow us on <strong>Twitter</strong>, view source and contribute on <strong>Github</strong>, read the <strong>Help</strong> documentation on this page.</li>
+<li><strong>Donate</strong> – if you like the extension, please consider supporting the active development of Dark Reader.
+Crowdfunding is powered by Open Collective, which currently uses Stripe for handling payments.</li>
 <li><strong>News</strong> – notifies about release notes and important events.</li>
 <li><strong>Developer tools</strong> – opens a config editor for the current theme mode.</li>
 </ul>
 <h2 id="using-dev-tools">Using the Developer tools</h2>
 
-<p>If you are familiar with CSS selectors, you can suggest a fix for some websites.
+<p>If you are familiar with CSS selectors, you can help by suggesting a fix for filtering a website.
 Read how to use the developer tools <a href="https://github.com/darkreader/darkreader#how-to-contribute">here</a>.</p>
 <h2 id="faq">FAQ</h2>
 
 <h4 id="the-extension-asks-for-permissions-to-read-website-data">The extension asks for permissions to read website data</h4>
 <p>The extension needs these permissions to be able to analyze and modify website appearence,
-determine if a website is disabled by your settings or use site-specific rules.
+determine if a website is disabled by your settings or to use site-specific rules.
 We do not insert ads and do not collect any data or send it anywhere.
 The extension is fully open-source and has no obfuscated code.
-Our monetization is transparent and is based on user&#39;s donations.</p>
-<h4 id="extensions-store-page-and-settings-pages-remain-white">Extensions&#39; store page and settings pages remain white</h4>
+Our monetization is transparent and is based on users&#39; donations.</p>
+<h4 id="the-extensions-store-page-and-settings-pages-remain-white">The extensions store page and settings pages remain white</h4>
 <p>The extension has no access to these pages.</p>
 <h4 id="new-tab-page-and-browser-theme-remain-white">New tab page and browser theme remain white</h4>
-<p>The extension cannot change the appearence of a new tab or browser (it can since Firefox 60).
-Install some dark theme or new tab extension from extensions store.</p>
-<h4 id="screen-flashes-white-when-opening-a-new-tab-or-navigating-a-website">Screen flashes white when opening a new tab or navigating a website</h4>
-<p>Before loading a website, Chrome shows theme background color by default,
-so you should install some dark theme from the store.</p>
+<p>The extension cannot change the appearence of a new tab or browser (though in Firefox it can since version 60).
+We recommend installing a dark theme or new tab extension from extensions store.</p>
+<h4 id="screen-flashes-white-when-opening-a-new-tab-or-navigating-to-a-website">Screen flashes white when opening a new tab or navigating to a website</h4>
+<p>Before loading a website, Chrome shows the theme background color by default.
+We recommend installing a dark theme from the store.</p>
 <h4 id="the-extension-doesnt-work-at-all">The extension doesn&#39;t work at all</h4>
-<p>If you have similar dark mode extensions installed, disable them, reload tabs.
-Click Dark Reader icon, check if top-right button is set to <strong>On</strong>.
+<p>If you have similar dark mode extensions installed, disable them, then reload tabs.
+Click Dark Reader icon, check if top-right button is set to <strong>On</strong> and that <strong>Toggle site</strong> is not excluding the current site.
 Open <strong>Site list</strong> tab, check that <strong>Not invert listed</strong> is selected.
 If nothing helps, something terrible has happened, e-mail us.</p>
-<h4 id="the-website-is-displayed-incorrectly-or-works-slow">The website is displayed incorrectly or works slow</h4>
-<p>Please, send the website address, screenshot, your OS and browser versions to our e-mail.
+<h4 id="the-website-is-displayed-incorrectly-or-works-slowly">The website is displayed incorrectly or works slowly</h4>
+<p>Please send the website address, a screenshot, your OS and browser versions to our e-mail.
 We will try to investigate the reason, at least for a popular website.
 Also try changing <strong>theme generation mode</strong> or try using <strong>Light mode</strong>.
-Check that website is not listed under <strong>Site list</strong> tab.</p>
+Check that the website is not listed under <strong>Site list</strong> tab.</p>
 <h4 id="the-extension-doesnt-work-in-incognito-mode">The extension doesn&#39;t work in incognito mode</h4>
 <p>Open <strong>chrome://extensions</strong> page, find <strong>Dark Reader</strong>, click <strong>Allow in incognito</strong>.</p>
 <h4 id="the-extension-doesnt-work-for-local-files">The extension doesn&#39;t work for local files</h4>
