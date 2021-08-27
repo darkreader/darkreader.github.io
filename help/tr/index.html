@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Yardım – Dark Reader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/images/darkreader-icon-256x256.png" />
+    <link rel="stylesheet" type="text/css" href="/styles/help-topic.css" />
+    <meta name="theme-color" content="#141e24" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://darkreader.org/help/tr/" />
+    <meta property="og:title" content="Yardım – Dark Reader" />
+    <meta property="og:image" content="https://darkreader.org/images/darkreader-screenshot-v5-preview.png" />
+</head>
+
+<body class="page-grid-body">
+    <header class="page-grid-header">
+        <a class="help-header-logo" href="../"></a>
+    </header>
+    <article class="page-grid-content">
+        <p>Bu döküman Dark Reader özellikleri hakkında size rehberlik edecek.</p>
+<ul>
+<li><a href="#faq">SSS</a></li>
+<li><a href="#contacts">İletişim</a></li>
+<li><a href="#top-section">Üst bölüm</a></li>
+<li><a href="#filter-settings">Filtre ayarları</a></li>
+<li><a href="#custom-site-settings">Özel site ayarları</a></li>
+<li><a href="#site-list">Site listesi</a></li>
+<li><a href="#more-tab">Daha fazla bölümü</a></li>
+<li><a href="#theme-generation-modes">Tema oluşturma modları</a></li>
+<li><a href="#bottom-section">Üst bölüm</a></li>
+<li><a href="#using-dev-tools">Geliştirici araçlarını kullanma</a></li>
+</ul>
+<h2 id="top-section">Üst bölüm</h2>
+
+<img src="/images/help/darkreader-top-section.png" alt="Top section" style="width: 15rem;" />
+
+<ul>
+<li><strong>Bu site için aç-kapat</strong> Siteyi görmezden gel (yada tekrar etkinleştir).</li>
+<li><strong>Açık-Kapalı</strong> Eklentiyi Açar yada Kapatır.</li>
+<li><strong>Kısayol tuşunu ayarlamak</strong> için butonların altındaki bağlantılara tıklayın.</li>
+<li>Not: Eğer buton gri halde ise bu tarayıcının bu sayfayı değiştirmek için olan girişimlere izin vermediği anlamına gelir.</li>
+</ul>
+<h2 id="filter-settings">Filtre ayarları</h2>
+
+<img src="/images/help/darkreader-filter-settings.png" alt="Filter settings" style="width: 15rem;" />
+
+<p>Parlaklık,kontrast,sepya ve doygunluk(gri ton) ayarlarını, ekranınıza ve odanızın aydınlatmasına uyması için değiştirebilirsiniz</p>
+<h2 id="custom-site-settings">Özel site ayarları</h2>
+
+<img src="/images/help/darkreader-custom-site-settings.png" alt="Custom settings" style="width: 15rem;" />
+
+<p><strong>Sadece</strong> butonu yukarıdaki ayarların sadece bu site için geçerli olduğunu belirtir.</p>
+<p>Kullanmak için: Öncelikle butona tıklayın(Vurgulanmış hale gelmeli), ardından arzu ettiğiniz şekilde ayarları bu site için değiştirebilirsiniz.İptal etmek için butona tekrar tıklayın</p>
+<h2 id="site-list">Site listesi</h2>
+
+<img src="/images/help/darkreader-site-list.png" alt="Site list" style="width: 15rem;" />
+
+<ul>
+<li>Eğer Dark Reader&#39;ın sadece listelenen sitelerde çalışmasını istiyorsanız <strong>Sadece listedekiler</strong> seçeneğini kullanın.</li>
+<li><strong>Hariç tutulanlar</strong> eklentinin listedeki sitelerde çalışmasını önler.</li>
+<li>Muhtemel alan adı biçimleri: &quot;<code>google.com, mail.google.com, google.*, google.com/maps</code>&quot; gibidir.</li>
+<li><strong>Aç-kapa</strong> butonu (<a href="#top-section">Üst bölüm</a>) Şu anki siteyi listeye ekler.</li>
+</ul>
+<h2 id="more-tab">Daha fazla bölümü</h2>
+
+<img src="/images/help/darkreader-more-tab.png" alt="More tab" style="width: 15rem;" />
+
+<ul>
+<li>Listeden <strong>Font seç</strong> (Yada Firefox için font ismi gir),<strong>İşaret kutusuna</strong> tıkla.</li>
+<li><strong>Metin kalınlığını</strong> ayarla.</li>
+<li>Bir <strong>Tema oluşturma modu seç</strong>.</li>
+</ul>
+<h2 id="theme-generation-modes">Tema oluşturma modları</h2>
+
+<figure>
+    <img src="/images/help/darkreader-theme-modes.png" alt="Filter+ vs. Static vs. Dynamic mode" />
+    <figcaption>Filter+ vs. Static vs. Dynamic mode</figcaption>
+</figure>
+
+<ul>
+<li><strong>Filtre</strong> Dark reader için, CSS filtrelerine dayanan temel moddur.</li>
+<li>Tüm sayfayı* ters çevirir ve ardından <em>Bazı parçaları</em> eski haline getirir.
+GPU kullanır.</li>
+<li>Hızlı* ve güçlüdür ancak birkaç sorun içerir:
+Alt-pixel oluşturmayı devredışı bırakır,
+Halihazırda karanlık olan kısımları aydınlatır,
+Büyük sayfalarda takılmaya neden olur,
+Ve Firefox&#39;ta bazı sayfların hata vermesine neden olabilir.</li>
+<li><strong>Filtre+</strong> Filtre ile aynıdır, ama özel SVG filtrelerine dayanır
+Ve Resimleri daha az donuk yapmak için <em>Rekleri daha iyi işler</em>
+Firefox&#39;ta pek iyi çalışmaz.</li>
+<li><strong>Statik</strong> sürekli basit stil şemaları oluşturur.</li>
+<li><strong>Dinamik</strong> Sitenin stil şemalarını, arkaplan resimlerini ve vektör grafiklerini analiz eder.
+Sayfa yüklenirken biraz kaynak kullanımı gerektirir.
+Ama <em>en iyi</em> görsel sonucu sağlar
+Bu mod üzerinde halen çalışıyoruz,
+ama şimdiden çoğu modern sitede gayet iyi çalışıyor.</li>
+</ul>
+<h2 id="bottom-section">Alt bölüm</h2>
+
+<img src="/images/help/darkreader-footer.png" alt="Bottom section" style="width: 15rem;" />
+
+<ul>
+<li><strong>Gizlilik politikamızı</strong> okuyun, Bizi <strong>Twitter&#39;dan</strong> takip edin, Kaynak kodunu görmek ve katkı sağlamak için <strong>Github</strong>&#39;ı ziyaret edin, bu sayfadan <strong>Yardım</strong> dökümanını okuyun.</li>
+<li><strong>Bağış</strong> – eğer eklentiyi beğendiyseniz, lütfen Dark Reader&#39;ın geliştirilmesi için bağış yaparak desteğinizi gösterin.
+Crowdfunding Open Collective tarafından sağlanmaktadır,ödemeler Stripe üzerinden gerçekleşmektedir.</li>
+<li><strong>Haberler</strong> – Yeni sürümlerden, notlardan ve geliştirmelerden haber alın.</li>
+<li><strong>Geliştirici araçları</strong> – Şimdiki tema modunu düzenlemek için bir düzenleyici açar.</li>
+</ul>
+<h2 id="using-dev-tools">Geliştirici ayarlarını kullanma</h2>
+
+<p>Eğer CSS Seçicileri hakkında bilgi sahibi iseniz, bir web sitesi için düzeltme önererek yardım edebilirsiniz.
+<a href="https://github.com/darkreader/darkreader#how-to-contribute">Buradan</a> Geliştirici araçlarını nasıl kullanacağınız hakkında bilgi alabilirsiniz.    </p>
+<h2 id="faq">SSS</h2>
+
+<h4 id="eklenti-web-sitesini-okumak-için-izin-istiyor">Eklenti web sitesini okumak için izin istiyor</h4>
+<p>Eklenti siteleri analiz etmek ve değiştirmek için bu izne ihtiyaç duyar,
+sitenin sizin ayarlarınızda ne şekilde yer aldığını belirlemek için de.
+Herhangi bir reklam yerleştirmiyor, bilgilerinizi toplamıyor yada bir yere göndermiyoruz.
+Eklenti tamamen açık kaynak kodludur ve gizli bir kod içermez.
+Para kazanma sistemimiz tamamen şeffaftır ve kullanıcıların bağışlarına dayanır.</p>
+<h4 id="eklenti-mağazası-ve-ayarlar-sayfası-beyaz-kaldı">Eklenti mağazası ve ayarlar sayfası beyaz kaldı</h4>
+<p>Eklentinin bu sayfalara erişimi yoktur.</p>
+<h4 id="yeni-sekme-ekranı-ve-tarayıcı-beyaz-kaldı">Yeni sekme ekranı ve tarayıcı beyaz kaldı</h4>
+<p>Eklenti yeni sekme yada tarayıcının görünüşünü değiştiremez (Firefox&#39;da versiyon 60&#39;tan itibaren olabilir).
+Eklenti mağazasından karanlık bir tema yada yeni sekme eklentisi yüklemenizi öneriyoruz.</p>
+<h4 id="yeni-bir-sekme-açarken-yada-sitelerde-dolaşırken-ekran-yanıp-sönüyor">Yeni bir sekme açarken yada sitelerde dolaşırken ekran yanıp-sönüyor</h4>
+<p>Bir siteyi yüklemeden önce, Chrome varsayılan olarak tema arkaplanını gösterir.
+Mağazadan karanlık bir tema yüklemenizi öneriyoruz.</p>
+<h4 id="eklenti-çalışmıyor">Eklenti çalışmıyor</h4>
+<p>Eğer benzer karanlık mod eklentileriniz varsa, devredışı bırakın, ardından sekmeleri yenileyin.
+Dark Reader ikonuna tıklayın, üst-sağ buton <strong>Açık</strong> olmalıdır ve <strong>Site listesi</strong> siteyi hariç tutmamalıdır.
+<strong>Site listesi</strong> bölümünden, <strong>Çevirilmemiş liste</strong> seçilmelidir.
+Eğer bunlar yardımcı olmadıysa, korkunç bir şey olmuş demektir, bize e-posta atın.</p>
+<h4 id="site-doğru-görüntülenmiyor-yada-çok-yavaş">Site doğru görüntülenmiyor yada çok yavaş</h4>
+<p>Lütfen sitenin adresini,bir ekran görüntüsünü, İşletim sisteminizin ve tarayıcınızın versiyonunu bize e-posta atın.
+Nedenini araştırmaya çalışacağız, en azından popüler siteler için.
+Ayrıca <strong>Tema oluşturma modunu</strong> da değiştirmeyi yada <strong>Aydınlık modu</strong> deneyin.
+Sitenin, <strong>Site listesinde</strong> listelenmediğinden emin olun.</p>
+<h4 id="eklenti-gizli-modda-çalışmıyor">Eklenti gizli modda çalışmıyor</h4>
+<p><strong>chrome://extensions</strong> sayfasını açın, <strong>Dark Reader</strong>&#39;ı bulun, <strong>Gizli modda izin ver</strong>i seçin.</p>
+<h4 id="eklenti-yerel-dosyalarda-çalışmıyor">Eklenti yerel dosyalarda çalışmıyor</h4>
+<p><strong>chrome://extensions</strong> sayfasını açın,<strong>Dark Reader</strong>&#39;ı bulun, <strong>Dosya URL&#39;lerine erişmeye izin ver</strong> seçeneğini seçin.</p>
+<h4 id="site-filtre-modunda-tamamen-görüntülenmiyor">Site Filtre modunda tamamen görüntülenmiyor</h4>
+<p>Eğer Mac OS için Chrome kullanıyorsanız, Mac OS sürümünüzü 10.13&#39;e güncelleyin, bunu yapmak ekran kartı sürücülerinizi güncelleyecektir.
+Eğer Firefox kullanıyorsanız, bu genellikle tarayıcı hatasıdır, başka bir mod kullanmayı deneyin.</p>
+<h2 id="contacts">İletişim</h2>
+
+<p>Sorularınız için<a href="mailto:darkreaderapp@gmail.com">darkreaderapp@gmail.com</a> adresine e-posta atabilirsiniz.</p>
+
+        <darkreader-support-us></darkreader-support-us>
+        <script type="module" src="/elements/backers-bottom.js"></script>
+    </article>
+    <aside class="page-grid-inside">
+        <darkreader-backers-header></darkreader-backers-header>
+        <script type="module" src="/elements/backers-top.js"></script>
+    </aside>
+    <aside class="page-grid-side">
+        <darkreader-backers-side></darkreader-backers-side>
+        <script type="module" src="/elements/backers-right.js"></script>
+    </aside>
+</body>
+
+</html>
