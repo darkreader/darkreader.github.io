@@ -2,7 +2,7 @@
 
 *.* text eol=lf
 
-*.git binary
+*.gif binary
 *.jpg binary
 *.mp4 binary
 *.png binary
