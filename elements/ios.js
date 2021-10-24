@@ -9,10 +9,11 @@ const safariURL = 'https://apps.apple.com/us/app/dark-reader-for-safari/id143824
 
 const htmlText = `
 <h2 class="heading">
-    New
+    New app
 </h2>
 <section class="i">
     <a class="image-link" href="${safariURL}">
+        Dark Reader for iPhone, iPad and Mac
     </a>
 </section>
 `;
@@ -30,7 +31,7 @@ a:hover {
     width: 16rem;
 }
 .heading {
-    color: white;
+    color: var(--color-highlight);
     line-height: 1.25rem;
     margin: 0 0 0.75rem 2rem;
     -webkit-text-stroke: 0.0625rem;
@@ -48,6 +49,7 @@ section {
     filter: drop-shadow(0 0 0.5rem black);
     height: 32.5rem;
     position: relative;
+    text-indent: -999rem;
     /*transition: filter 250ms;*/
     width: 16rem;
 }
