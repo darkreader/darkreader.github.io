@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Activating new features preview – Dark Reader tips & tricks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/images/icon-256.png" />
+    <link rel="stylesheet" type="text/css" href="/styles/tips-topic.css" />
+    <meta name="theme-color" content="#141e24" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://darkreader.org/tips/activate-v5-preview/" />
+    <meta property="og:title" content="Activating new features preview – Dark Reader tips & tricks" />
+    <meta property="og:image" content="https://darkreader.org/images/darkreader-screenshot-v5-preview.png" />
+    <meta property="og:description" content="Tech tips for dark mode lovers" />
+</head>
+
+<body class="page-grid-body">
+    <header class="page-grid-header">
+        <a class="header-logo" href="../"></a>
+    </header>
+    <main class="page-grid-content">
+        <article>
+            <h1 id="activating-new-features-preview">Activating new features preview</h1>
+<p>Here&#39;s how you can preview custom background and text colors,
+website&#39;s own dark theme detection and many other features.</p>
+<h3 id="1-click-dark-reader-icon">1. Click Dark Reader icon</h3>
+<img src="/images/tips/v5-preview-icon.png" alt="Dark Reader icon" style="width: 24rem;" loading="lazy" />
+
+<h3 id="2-click-dev-tools-button">2. Click &quot;Dev Tools&quot; button</h3>
+<img src="/images/tips/v5-preview-devtools-button.png" alt="Dev Tools button" style="width: 16rem;" loading="lazy" />
+
+<h3 id="3-click-preview-new-design-button">3. Click &quot;Preview new design&quot; button</h3>
+<img src="/images/tips/v5-preview-devtools.png" alt="Dev Tools" style="width: 24rem;" loading="lazy" />
+
+<h3 id="explore-the-new-design-preview">Explore the new design preview</h3>
+<img src="/images/tips/v5-preview-design.png" alt="Design preview" style="width: 16rem;" loading="lazy" />
+
+<p>Most of the new options can be found by clicking <strong>See all options</strong> button in <strong>Theme section</strong>,
+and by clicking <strong>Settings</strong> button.</p>
+<h3 id="the-design-will-change-in-future">The design will change in future</h3>
+<p>We keep improving the design.
+The iOS version of Dark Reader represents the look and feel
+we hope will soon get into the desktop version.</p>
+<p><strong>Do you have iPhone or iPad?</strong>
+<strong>Then check out Dark Reader on the <a href="https://apps.apple.com/us/app/dark-reader-for-safari/id1438243180#?platform=iphone">App Store</a></strong>.
+This is also a great way to support the ongoing Dark Reader development.
+You can support us in other ways too.
+Check out our sponsors or donate.</p>
+<div class="ios-preview">
+    <img src="/images/ios-mini-3.jpg" alt="iOS custom color" style="width: 12rem;" loading="lazy" />
+</div>
+<style>
+    .ios-preview {
+        border: 0.5rem solid black;
+        border-radius: 2rem;
+        box-shadow: 0 0 0 0.125rem #ffffff44;
+        overflow: hidden;
+        position: relative;
+        width: 12rem;
+    }
+    .ios-preview::after {
+        background-color: black;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        left: 50%;
+        margin-left: -3rem;
+        position: absolute;
+        top: 0;
+        width: 6rem;
+    }
+</style>
+
+
+            <p>
+                <darkreader-donate-mascot></darkreader-donate-mascot>
+                <script type="module" src="/elements/donate-mascot.js"></script>
+            </p>
+        </article>
+    </main>
+    <aside class="page-grid-inside">
+        <darkreader-backers-header></darkreader-backers-header>
+        <script type="module" src="/elements/backers-top.js"></script>
+    </aside>
+    <aside class="page-grid-side">
+        <darkreader-backers-side></darkreader-backers-side>
+        <script type="module" src="/elements/backers-right.js"></script>
+    </aside>
+    <aside class="page-grid-ios">
+        <darkreader-ios-side></darkreader-ios-side>
+        <script type="module" src="/elements/ios.js"></script>
+    </aside>
+    <script>
+        document.querySelectorAll('video').forEach((video) => {
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
