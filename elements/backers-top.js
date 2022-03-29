@@ -93,7 +93,7 @@ const tHTMLText = `
 </div>
 `;
 
-const safariURL = 'https://apps.apple.com/us/app/dark-reader-for-safari/id1438243180#?platform=iphone';
+const safariURL = 'https://apps.apple.com/us/app/dark-reader-for-safari/id1438243180?platform=iphone';
 
 const appleHTMLText = `
 <div class="up">
@@ -281,7 +281,7 @@ a:hover {
     color: var(--color-text-hover);
 }
 .support-ua {
-    max-width: 37rem;
+    max-width: 35.5rem;
     text-align: center;
 }
 .support-ua::before {
