@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pomoć – Dark Reader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/images/icon-256.png" />
+    <link rel="stylesheet" type="text/css" href="/styles/help-topic.css" />
+    <meta name="theme-color" content="#141e24" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://darkreader.org/help/sr/" />
+    <meta property="og:title" content="Pomoć – Dark Reader" />
+    <meta property="og:image" content="https://darkreader.org/images/darkreader-screenshot-v5-preview.png" />
+</head>
+
+<body class="page-grid-body">
+    <header class="page-grid-header">
+        <a class="help-header-logo" href="../"></a>
+    </header>
+    <article class="page-grid-content">
+        <h1>Pomoć — Dark Reader</h1>
+        <p>Ovaj dokument će vas upoznati sa mogućnostima Dark Reader-a.</p>
+<ul>
+<li><a href="#faq">Često postavljana pitanja</a></li>
+<li><a href="#contacts">Kontakti</a></li>
+<li><a href="#top-section">Gornji odeljak</a></li>
+<li><a href="#filter-settings">Podešavanja filtera</a></li>
+<li><a href="#custom-site-settings">Podešavanja za konkretne sajtove</a></li>
+<li><a href="#site-list">Lista sajtova</a></li>
+<li><a href="#more-tab">Kartica &quot;Više&quot;</a></li>
+<li><a href="#theme-generation-modes">Modovi generisanja tema</a></li>
+<li><a href="#bottom-section">Donji odeljak</a></li>
+<li><a href="#using-dev-tools">Korišćenje alatki za razvoj</a></li>
+</ul>
+<h2 id="top-section">Gornji odeljak</h2>
+
+<img src="/images/help/darkreader-top-section.png" alt="Gornji odeljak" style="width: 15rem;" loading="lazy" />
+
+<ul>
+<li>Dugme <strong>Uklj. trenutni sajt</strong> dodaje trenutni sajt u listu izuzetaka (ili ga odatle briše).</li>
+<li><strong>Uklj/Isklj</strong> prekidač omogućava ili onemogućava ekstenziju.</li>
+<li>Kliknite na veze ispod dugmadi da <strong>promenite tasterske prečice</strong> za ekstenziju.</li>
+<li>Napomena: ako je prekidač izbledeo, onda pregledač ne dâ da se na trenutnu stranicu ubacuju skripte.</li>
+</ul>
+<h2 id="filter-settings">Podešavanja filtera</h2>
+
+<img src="/images/help/darkreader-filter-settings.png" alt="Podešavanja filtera" style="width: 15rem;" loading="lazy" />
+
+<p>Podesite mod, osvetljenje, kontrast, sepiju i saturaciju (&quot;sivi mod&quot;), tako da bolje odgovara parametrima vašeg ekrana i osvetljenju u sobi.</p>
+<h2 id="custom-site-settings">Podešavanja za konkretne sajtove</h2>
+
+<img src="/images/help/darkreader-custom-site-settings.png" alt="Podešavanja za konkretne sajtove" style="width: 15rem;" loading="lazy" />
+
+<p>Dugme <strong>Samo za</strong> određuje da li podešavanja filtera iznad trebaju da se primene samo za trenutni sajt.</p>
+<p>Da biste to podesili, prvo kliknite dugme (koje će se osvetliti), onda podesite filtere kako želite za trenutni sajt. Kliknite dugme opet da otkažete.</p>
+<h2 id="site-list">Lista sajtova</h2>
+
+<img src="/images/help/darkreader-site-list.png" alt="Lista sajtova" style="width: 15rem;" loading="lazy" />
+
+<ul>
+<li>Koristite <strong>Invertujte izlistane</strong> ako želite da Dark Reader radi samo sa sajtovima na listi.</li>
+<li><strong>Ne invertujte izlistane</strong> će učiniti da ekstenzija ne radi na izlistanim sajtovima.</li>
+<li>Primeri mogućih značenja su <code>google.com, mail.google.com, google.*, google.com/maps</code> itd.</li>
+<li>Klik na dugme <strong>Uklj. trenutni sajt</strong> (u <a href="#top-section">gornjem odeljku</a>) dodaje trenutni sajt na ovu listu.</li>
+</ul>
+<h2 id="more-tab">Kartica "Više"</h2>
+
+<img src="/images/help/darkreader-more-tab.png" alt="Kartica Više" style="width: 15rem;" loading="lazy" />
+
+<ul>
+<li><strong>Izaberite font</strong> sa spiska (ili unesite ime fonta u Firefox-u), označite <strong>polje</strong>.</li>
+<li>Podesite <strong>debljinu teksta</strong>.</li>
+<li>Izaberite <strong>mod generisanja tema</strong>.</li>
+</ul>
+<h2 id="theme-generation-modes">Modovi generisanja tema</h2>
+
+<figure>
+    <img src="/images/help/darkreader-theme-modes.png" alt="Filter+ vs. statični vs. dinamični mod" loading="lazy" />
+    <figcaption>Filter+ vs. statični vs. dinamični mod</figcaption>
+</figure>
+
+<ul>
+<li><strong>Filter</strong> je početni mod Dark Reader-a, zasnovani na CSS filterima.</li>
+</ul>
+<p><em>Invertuje celu stranu</em>, pa <em>invertuje neke delove</em> nazad.
+Zahtevan je prema grafičkoj jedinici.
+<em>Brz</em> je, ali ima par mana:
+onemogućava potpikselno renderovanje teksta,
+invertuje već tamne delove u svetle,
+izaziva usporavanja na većim stranicama,
+i ne renderuje neke strane u Firefox-u.</p>
+<ul>
+<li><strong>Filter+</strong> je isto što i Filter, ali je zasnovano na posebnim SVG filterima
+i <em>bolje obrađuje boje,</em> čineći slike manje mutnim.
+Loše radi u Firefox-u.</li>
+<li><strong>Statično</strong> brzo generiše jednostavnu temu.</li>
+<li><strong>Dinamično</strong> analizira stilove trenutne stranice, pozadinske slike, vektorsku grafiku.
+Zahteva nešto više resursa pri početnom učitavanju stranice,
+ali daje vizuelno <em>najbolje</em> rezultate.
+Na ovom modu se još radi,
+ali već radi odlično na većini modernih sajtova.</li>
+</ul>
+<h2 id="bottom-section">Donji odeljak</h2>
+
+<img src="/images/help/darkreader-footer.png" alt="Donji odeljak" style="width: 15rem;" loading="lazy" />
+
+<ul>
+<li>Pročitajte našu <strong>izjavu o privatnosti</strong>, zapratite nas na <strong>Tviteru</strong>, pogledajte izvorni kod i doprinesite na <strong>GitHub-u</strong>, pročitajte <strong>pomoćnu</strong> dokumentaciju na ovoj stranici.</li>
+<li><strong>Donirajte</strong> – ako vam se dopada ekstenzija, molimo razmislite o tome da podržite njen aktivni razvoj.
+Finansiranje se vodi pomoću Open Collective, koji trenutno koristi Stripe za plaćanja.</li>
+<li><strong>Vesti</strong> – obaveštava o novim verzijama i važnim događajima.</li>
+<li><strong>Alatke za razvoj</strong> – otvara editor konfiguracije trenutnog moda generisanja teme.</li>
+</ul>
+<h2 id="using-dev-tools">Korišćenje alatki za razvoj</h2>
+
+<p>Ako ste upoznati sa CSS selektorima, možete pomoći tako što ćete predložiti ispravku za filtriranje nekog sajta.
+Kako se koriste alatke za razvoj možete pročitati <a href="https://github.com/darkreader/darkreader#how-to-contribute">ovde</a>.</p>
+<h2 id="faq">Često postavljana pitanja</h2>
+
+<h4 id="ekstenzija-zahteva-dozvole-za-pristup-sajtovima">Ekstenzija zahteva dozvole za pristup sajtovima</h4>
+<p>Ekstenziji su potrebne te dozvole da bi mogla da analizira i menja izgled sajtova,
+odredi da li je sajt izuzet u vašim podešavanjima, ili koristi posebna pravila za trenutni sajt.
+Ne ugrađujemo reklame, ne sakupljamo vaše podatke, i nigde ih ne šaljemo.
+Ekstenzija je u potpunosti otvorenog koda i ne sadrži nikakav maskirani kod.
+Naša monetizacija je transparentna i zasnovana na donacijama korisnika.</p>
+<h4 id="prodavnica-sa-dodacima-i-stranice-sa-podešavanjima-su-i-dalje-bele">Prodavnica sa dodacima i stranice sa podešavanjima su i dalje bele</h4>
+<p>Ekstenzija nema pristup tim stranicama.</p>
+<h4 id="stranica-nove-kartice-i-tema-pregledača-su-i-dalje-bele">Stranica nove kartice i tema pregledača su i dalje bele</h4>
+<p>Ekstenzija ne može da menja izgled nove kartice ili pregledača (osim na Firefox-u od verzije 60).
+Preporučujemo vam da instalirate neku tamnu temu ili ekstenziju za nove kartice iz vaše prodavnice sa dodacima.</p>
+<h4 id="ekran-bljesne-belom-pri-otvaranju-nove-kartice-ili-stranice">Ekran bljesne belom pri otvaranju nove kartice ili stranice</h4>
+<p>Pre učitavanja stranice, Chrome pokazuje pozadinsku boju trenutne teme.
+Preporučujemo vam da instalirate neku tamnu temu iz vaše prodavnice sa dodacima.</p>
+<h4 id="ekstenzija-uopšte-ne-radi">Ekstenzija uopšte ne radi</h4>
+<p>Ako imate slične ekstenzije za tamnu temu instalirane, onemogućite ih, pa ponovo učitajte kartice.
+Kliknite na ikonicu Dark Reader-a i uverite se da je prekidač u gornjem desnom uglu podešen na <strong>Uklj</strong>, i da <strong>Uklj. trenutni sajt</strong> ne izuzima trenutni sajt.
+Otvorite karticu <strong>Lista sajtova</strong> i uverite se da je <strong>Ne invertujte izlistane</strong> odabrano.
+Ako ništa ne pomaže, onda je sve baš loše, pošaljite nam imejl.</p>
+<h4 id="sajt-se-prikazuje-pogrešno-ili-radi-sporo">Sajt se prikazuje pogrešno ili radi sporo</h4>
+<p>Molimo vas, pošaljite nam adresu sajta, snimak ekrana, verzije vašeg pregledača i OS na naš imejl.
+Probaćemo da nađemo razlog, bar za popularnije sajtove.
+Takođe probajte da promenite <strong>mod generisanja tema</strong> ili probajte <strong>Svetli mod</strong>.
+Uverite se da sajt nije na kartici <strong>Lista sajtova</strong></p>
+<h4 id="ekstenzija-ne-radi-u-inkognito-režimu">Ekstenzija ne radi u inkognito režimu</h4>
+<p>Otvorite stranu <strong>chrome://extensions</strong>, nađite <strong>Dark Reader</strong>, uključite <strong>Omogući u režimu bez arhiviranja</strong>.</p>
+<h4 id="ekstenzija-ne-radi-za-lokalne-fajlove">Ekstenzija ne radi za lokalne fajlove</h4>
+<p>Otvorite stranu <strong>chrome://extensions</strong>, nađite <strong>Dark Reader</strong>, uključite <strong>Dozvoli pristup URL adresama datoteka</strong>.</p>
+<h4 id="sajt-se-uopšte-ne-prikazuje-u-modu-filter">Sajt se uopšte ne prikazuje u modu Filter</h4>
+<p>Ako koristite Chrome za Mac OS, ažurirajte Mac OS na verziju 10.13 ili višu, to bi trebalo da ažurira video drajvere.
+Ako koristite Firefox, u pitanju je najverovatnije bag pregledača, koristite drugi mod za takve sajtove.</p>
+<h2 id="contacts">Kontakti</h2>
+
+<p>Sa bilo kakvim pitanjima obratite nam se na <a href="mailto:darkreaderapp@gmail.com">darkreaderapp@gmail.com</a></p>
+
+        <darkreader-backers-header></darkreader-backers-header>
+        <script type="module" src="/elements/backers-top.js"></script>
+        <darkreader-support-us></darkreader-support-us>
+        <script type="module" src="/elements/backers-bottom.js"></script>
+    </article>
+    <aside class="page-grid-inside">
+        <darkreader-backers-header></darkreader-backers-header>
+        <script type="module" src="/elements/backers-top.js"></script>
+    </aside>
+    <aside class="page-grid-side">
+        <darkreader-backers-side></darkreader-backers-side>
+        <script type="module" src="/elements/backers-right.js"></script>
+    </aside>
+    <aside class="page-grid-left">
+        <ul></ul>
+        <script>
+            (() => {
+                const script = document.currentScript;
+                const list = document.querySelector('.page-grid-content > h1 + p + ul');
+                if (!script || !list) {
+                    return;
+                }
+                const parent = script.parentElement;
+                const placeholder = parent.querySelector('ul');
+                const copy = list.cloneNode(true);
+                copy.classList.add('nav');
+                placeholder.replaceWith(copy);
+                list.classList.add('list-copied');
+            })();
+        </script>
+        <darkreader-ios-static></darkreader-ios-static>
+        <script type="module" src="/elements/ios-static.js"></script>
+    </aside>
+    <aside class="page-grid-ios">
+        <darkreader-ios-side></darkreader-ios-side>
+        <script type="module" src="/elements/ios.js"></script>
+    </aside>
+</body>
+
+</html>
