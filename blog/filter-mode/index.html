@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>How to use Filter Mode as a fallback for problematic websites – Dark Reader blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/images/icon-256.png" />
+    <link rel="stylesheet" type="text/css" href="/styles/blog-post.css" />
+    <meta name="theme-color" content="#141e24" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://darkreader.org/blog/filter-mode/" />
+    <meta property="og:title" content="How to use Filter Mode as a fallback for problematic websites – Dark Reader blog" />
+    <meta property="og:image" content="https://darkreader.org/images/filter-mode_sheets.png" />
+    <meta property="og:description" content="Today we would like to (re)introduce you Filter mode. It can improve your experience on some websites, like Google Sheets." />
+</head>
+
+<body class="page-grid-body">
+    <header class="page-grid-header">
+        <a class="header-logo" href="../"></a>
+    </header>
+    <main class="page-grid-content">
+        <article>
+            <h6>August 25, 2022</h6>
+
+            <h1 id="how-to-use-filter-mode-as-a-fallback-for-problematic-websites">How to use Filter Mode as a fallback for problematic websites</h1>
+<p>Today we would like to (re)introduce you <strong>Filter mode</strong>.
+It can improve your experience on some websites, like <em>Google Sheets</em>.
+It can be used as a fallback, when suddenly some website&#39;s content becomes unreadable in <strong>Dynamic mode</strong>
+<em>(like a problem we recently had with Gmail icons and Google Calendar events)</em>,
+or when instead of inversion you wish to just dim the browser&#39;s content.</p>
+<figure>
+    <img src="/images/filter-mode_sheets.png" alt="Dark filter mode for Google Sheets" style="width: 32rem;" />
+</figure>
+
+<h3 id="what-is-filter-mode">What is Filter mode</h3>
+<p>Filter mode was the initial one available in Dark Reader before 2018.
+It dims or inverts the website&#39;s content by using CSS or SVG Filters.
+It works fast, but may have a small impact on images, videos,
+inverts already dark content back to light.
+But it may be useful in some cases.</p>
+<h3 id="activating-filter-mode-for-a-particular-website">Activating Filter mode for a particular website</h3>
+<ol>
+<li>Click Dark Reader&#39;s icon.</li>
+<li>Go to <em>More</em>.<figure>
+ <img src="/images/filter-mode_more.png" alt="Find filter mode by clicking More" style="width: 16rem;" />
+</figure></li>
+<li>Click <strong>Only for website name</strong>.<figure>
+ <img src="/images/filter-mode_selection.png" alt="Mode selector" style="width: 16rem;" />
+</figure></li>
+<li>Choose <strong>Filter</strong> of <strong>Filter+</strong>.</li>
+<li>Return to <strong>Filter</strong> tab and configure brightness, contrast, sepia, inversion.<figure>
+ <img src="/images/filter-mode_dimm.png" alt="Screen dimmer" style="width: 32rem;" />
+</figure></li>
+</ol>
+<p><strong>Filter+</strong> is based on SVG filters. It produces more vivid colors,
+may be a bit slower and usually fails to work in Firefox.</p>
+<div>
+    <darkreader-inside-post></darkreader-inside-post>
+    <script type="module" src="/elements/inside-post.js"></script>
+</div>
+
+<h3 id="activating-filter-mode-in-v5-design-preview">Activating Filter mode in v5 Design Preview</h3>
+<p>If you haven&#39;t seen the v5 features preview yet, you can read the instructions <a href="../../tips/activate-v5-preview/">here</a>.</p>
+<ol>
+<li>Click Dark Reader&#39;s icon.</li>
+<li>Click on <strong>Theme for all websites</strong> dropdown.</li>
+<li>Select the current website.</li>
+<li>Click <strong>Mode</strong> dropdown, select <strong>Filter</strong> of <strong>Filter+</strong>.</li>
+<li>You can select <strong>Light</strong> scheme to just dim the content.
+You can find more options by clicking <strong>See all options</strong>.<figure>
+ <img src="/images/filter-mode_v5-ui.png" alt="Dark Reader v5 UI for selecting filter mode" style="width: 16rem;" />
+</figure></li>
+</ol>
+<p>Now, if some website looks wrong,
+before we are able to fix it,
+you can use Filter mode as a fallback.
+Some may prefer to use it all the time.</p>
+<p>Have a pleasant website browsing!</p>
+
+
+            <p>
+                <darkreader-donate-mascot></darkreader-donate-mascot>
+                <script type="module" src="/elements/donate-mascot.js"></script>
+            </p>
+        </article>
+    </main>
+    <footer class="page-grid-footer">
+        <nav>
+            <div class="read-next">
+                <span class="read-next__top">Read next</span>
+                <span class="read-next__icon" style="background-image: url('https://darkreader.org/images/survey-blog-icon.png')"></span>
+                <a href="/blog/v5-survey/" class="read-next__title">Survey! Please leave us feedback or propose a feature</a>
+            </div>
+        </nav>
+    </footer>
+    <aside class="page-grid-inside">
+        <darkreader-backers-header></darkreader-backers-header>
+        <script type="module" src="/elements/backers-top.js"></script>
+    </aside>
+    <aside class="page-grid-side">
+        <darkreader-backers-side></darkreader-backers-side>
+        <script type="module" src="/elements/backers-right.js"></script>
+    </aside>
+    <aside class="page-grid-left">
+        <darkreader-ios-static></darkreader-ios-static>
+        <script type="module" src="/elements/ios-static.js"></script>
+    </aside>
+    <aside class="page-grid-ios">
+        <darkreader-ios-side></darkreader-ios-side>
+        <script type="module" src="/elements/ios.js"></script>
+    </aside>
+    <script>
+        document.querySelectorAll('video').forEach((video) => {
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
