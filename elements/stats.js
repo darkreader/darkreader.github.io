@@ -1,6 +1,8 @@
 // @ts-check
 import {throttle} from './utils.js';
 
+const ERROR_HANDLING_ENABLED = false;
+
 /**
  * @param {Element} element
  * @param {string} name
@@ -14,7 +16,7 @@ export function clicker(element, name) {
         const lang = navigator.language;
         const time = Intl.DateTimeFormat().resolvedOptions().timeZone;
         const params = encodeParams(name, path, lang, time);
-        fetch(`https://statistics.darkreader.app/click/v1/${params}`);
+        fetch(`https://counter.darkreader.app/click/v1/${params}`);
     }));
 }
 
@@ -23,12 +25,16 @@ function viewer() {
     const lang = navigator.language;
     const time = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const params = encodeParams(path, lang, time);
-    fetch(`https://statistics.darkreader.app/view/v1/${params}`);
+    fetch(`https://counter.darkreader.app/view/v1/${params}`);
 }
 
 async function checkNetErrors() {
+    if (!ERROR_HANDLING_ENABLED) {
+        return;
+    }
     const urls = {
         'net-err-stats': 'https://stats.darkreader.app/',
+        'net-err-counter': 'https://counter.darkreader.app/',
         'net-err-statistics': 'https://statistics.darkreader.app/',
         'net-err-statistics-js': 'https://darkreader.org/elements/statistics.js',
     };
