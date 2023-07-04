@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>How to check for UI errors (Firefox) – Dark Reader tips & tricks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/images/icon-256.png" />
+    <link rel="stylesheet" type="text/css" href="/styles/tips-topic.css" />
+    <meta name="theme-color" content="#141e24" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://darkreader.org/tips/ui-errors/" />
+    <meta property="og:title" content="How to check for UI errors (Firefox) – Dark Reader tips & tricks" />
+    <meta property="og:image" content="https://darkreader.org/images/darkreader-screenshot-v5-preview.png" />
+    <meta property="og:description" content="Tech tips for dark mode lovers" />
+</head>
+
+<body class="page-grid-body">
+    <header class="page-grid-header">
+        <a class="header-logo" href="../"></a>
+    </header>
+    <main class="page-grid-content">
+        <article>
+            <h1 id="how-to-check-for-ui-errors-firefox">How to check for UI errors (Firefox)</h1>
+<ol>
+<li><p>Click <strong>Dark Reader</strong> icon.</p>
+ <img src="/images/tips/reset-settings-icon.png" alt="Dark Reader icon" style="width: 16rem;" loading="lazy" />
+</li>
+<li><p>Right-click anywhere in the <strong>Dark Reader</strong> window and select <strong>View Page Source</strong>.</p>
+ <img src="/images/tips/UI-err-viewpage.png" alt="Dark Reader view page sourse" style="width: 16rem;" loading="lazy" />
+</li>
+<li><p>In the address bar delete <strong>“view-source:”</strong> and press Enter.</p>
+ <img src="/images/tips/UI-err-del.png" alt="Delete **view-source**" style="width: 16rem;" loading="lazy" />
+</li>
+<li><p>Press <strong>F12</strong> and see if there are any errors.</p>
+ <img src="/images/tips/UI-err-console.png" alt="Dark Reader UI console" style="width: 16rem;" loading="lazy" /></li>
+</ol>
+<p>If you find something please email to our support team <a href="mailto:&#x73;&#117;&#x70;&#x70;&#111;&#114;&#116;&#x40;&#x64;&#x61;&#x72;&#107;&#114;&#101;&#97;&#100;&#101;&#114;&#46;&#111;&#x72;&#x67;">&#x73;&#117;&#x70;&#x70;&#111;&#114;&#116;&#x40;&#x64;&#x61;&#x72;&#107;&#114;&#101;&#97;&#100;&#101;&#114;&#46;&#111;&#x72;&#x67;</a> and we will try to help you!</p>
+
+
+            <p>
+                <darkreader-donate-mascot></darkreader-donate-mascot>
+                <script type="module" src="/elements/donate-mascot.js"></script>
+            </p>
+        </article>
+    </main>
+    <aside class="page-grid-inside">
+        <darkreader-backers-header></darkreader-backers-header>
+        <script type="module" src="/elements/backers-top.js"></script>
+    </aside>
+    <aside class="page-grid-side">
+        <darkreader-backers-side></darkreader-backers-side>
+        <script type="module" src="/elements/backers-right.js"></script>
+    </aside>
+    <aside class="page-grid-ios">
+        <darkreader-ios-side></darkreader-ios-side>
+        <script type="module" src="/elements/ios.js"></script>
+    </aside>
+    <script>
+        document.querySelectorAll('video').forEach((video) => {
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
