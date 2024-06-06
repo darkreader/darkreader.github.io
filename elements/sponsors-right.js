@@ -1,7 +1,8 @@
 // @ts-check
 
 import './sponsors-graph.js';
-import {isHCountry} from './locales.js';
+import './pay-tiers.js';
+import {country, isEUCountry, isHCountry} from './locales.js';
 import {clicker} from './stats.js';
 import {
     createHTMLElement as html,
@@ -15,7 +16,6 @@ const isEdge = navigator.userAgent.includes('Edg');
 const isSafari = navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrom');
 const language = navigator.language || 'en';
 
-const outlineFilter = 'drop-shadow(0.0625rem 0 0 hsla(0, 0%, 100%, 1)) drop-shadow(-0.0625rem 0 0 hsla(0, 0%, 100%, 1)) drop-shadow(0 0.0625rem 0 hsla(0, 0%, 100%, 1)) drop-shadow(0 -0.0625rem 0 hsla(0, 0%, 100%, 1))';
 const buttonIcon = `<span class="b-icon${isEdge ? ' b-icon--edge' : isSafari ? ' b-icon--safari' : ''}"></span>`;
 
 const htmlText = `
@@ -30,7 +30,7 @@ const htmlText = `
         </span>
     </a>
     <a class="text-link ht" href="${hnURL}" target="_blank" rel="noopener">
-        Save <span class="ht-usd">$$$</span> when you shop online
+        Save <span class="ht-currency">$$$</span> when you shop online
     </a>
     <a class="button-link hb" href="${hnURL}" target="_blank" rel="noopener">
         ${buttonIcon}
@@ -75,30 +75,7 @@ const htmlText = `
     -->
 </section>
 <section class="pr">
-    <h4 class="pr-heading">Pay for using Dark Reader</h4>
-    <div class="pr-rates">
-        <label class="pr-rate">
-            <input type="radio" name="rate" value="rate-regular" checked>
-            <span class="pr-rate-desc">Regular use</span>
-            <span class="pr-rate-connect"></span>
-            <span class="pr-rate-price">$4.99</span>
-        </label>
-        <label class="pr-rate">
-            <input type="radio" name="rate" value="rate-reduced">
-            <span class="pr-rate-desc">Occasional use</span>
-            <span class="pr-rate-connect"></span>
-            <span class="pr-rate-price">$1.99</span>
-        </label>
-        <label class="pr-rate">
-            <input type="radio" name="rate" value="rate-corp">
-            <span class="pr-rate-desc">Corporate users</span>
-            <span class="pr-rate-connect"></span>
-            <span class="pr-rate-price">$9.99/yr</span>
-        </label>
-    </div>
-    <a class="button-link pb" href="${payURL}" target="_blank" rel="noopener">
-        <span class="button-link-text">Proceed</span>
-    </a>
+    <darkreader-pay-tiers></darkreader-pay-tiers>
 </section>
 <section class="nr">
     <h2 class="nr-heading">Not sponsored by</h2>
@@ -133,6 +110,8 @@ const htmlText = `
     </div>
 </section>
 `;
+
+const outlineFilter = 'drop-shadow(0.0625rem 0 0 hsla(0, 0%, 100%, 1)) drop-shadow(-0.0625rem 0 0 hsla(0, 0%, 100%, 1)) drop-shadow(0 0.0625rem 0 hsla(0, 0%, 100%, 1)) drop-shadow(0 -0.0625rem 0 hsla(0, 0%, 100%, 1))';
 
 const cssText = `
 a {
@@ -250,7 +229,7 @@ section {
     text-align: center;
     width: 100%;
 }
-.ht-usd {
+.ht-currency {
     color: #53b378;
 }
 .hb {
@@ -535,6 +514,12 @@ class BackersSideElement extends HTMLElement {
         clicker(qs('.nr-logo-github'), 'gh-side-ns');
 
         shadowRoot.host.classList.toggle('c-h', isHCountry);
+        const currency = qs('.ht-currency');
+        if (isEUCountry) {
+            currency.textContent = '€€€';
+        } else if (country === 'GB') {
+            currency.textContent = '£££';
+        }
     }
 }
 
