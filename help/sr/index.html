@@ -12,6 +12,11 @@
     <meta property="og:url" content="https://darkreader.org/help/sr/" />
     <meta property="og:title" content="Pomoć – Dark Reader" />
     <meta property="og:image" content="https://darkreader.org/images/darkreader-screenshot-v5-preview.png" />
+    <script>
+        if (navigator.userAgent.toLowerCase().includes('android')) {
+            document.documentElement.classList.add('android');
+        }
+    </script>
 </head>
 
 <body class="page-grid-body">
@@ -152,12 +157,16 @@ Ako koristite Firefox, u pitanju je najverovatnije bag pregledača, koristite dr
 
 <p>Sa bilo kakvim pitanjima obratite nam se na <a href="mailto:support@darkreader.org">support@darkreader.org</a></p>
 
+        <darkreader-pay-tiers></darkreader-pay-tiers>
+        <script type="module" src="/elements/pay-tiers.js"></script>
         <darkreader-backers-header></darkreader-backers-header>
         <script type="module" src="/elements/sponsors-top.js"></script>
         <darkreader-support-us></darkreader-support-us>
         <script type="module" src="/elements/sponsors-bottom.js"></script>
     </article>
     <aside class="page-grid-inside">
+        <darkreader-pay-tiers></darkreader-pay-tiers>
+        <script type="module" src="/elements/pay-tiers.js"></script>
         <darkreader-backers-header></darkreader-backers-header>
         <script type="module" src="/elements/sponsors-top.js"></script>
     </aside>

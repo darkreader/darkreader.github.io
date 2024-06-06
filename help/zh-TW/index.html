@@ -12,6 +12,11 @@
     <meta property="og:url" content="https://darkreader.org/help/zh-TW/" />
     <meta property="og:title" content="說明 – Dark Reader" />
     <meta property="og:image" content="https://darkreader.org/images/darkreader-screenshot-v5-preview.png" />
+    <script>
+        if (navigator.userAgent.toLowerCase().includes('android')) {
+            document.documentElement.classList.add('android');
+        }
+    </script>
 </head>
 
 <body class="page-grid-body">
@@ -153,12 +158,16 @@ Firefox 會無法呈現某些網頁。</li>
 <p>有任何疑問請 e-mail 至 <a href="mailto:support@darkreader.org">support@darkreader.org</a>
 （僅限英語）</p>
 
+        <darkreader-pay-tiers></darkreader-pay-tiers>
+        <script type="module" src="/elements/pay-tiers.js"></script>
         <darkreader-backers-header></darkreader-backers-header>
         <script type="module" src="/elements/sponsors-top.js"></script>
         <darkreader-support-us></darkreader-support-us>
         <script type="module" src="/elements/sponsors-bottom.js"></script>
     </article>
     <aside class="page-grid-inside">
+        <darkreader-pay-tiers></darkreader-pay-tiers>
+        <script type="module" src="/elements/pay-tiers.js"></script>
         <darkreader-backers-header></darkreader-backers-header>
         <script type="module" src="/elements/sponsors-top.js"></script>
     </aside>
