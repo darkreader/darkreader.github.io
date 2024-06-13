@@ -121,7 +121,7 @@ const htmlText = `
         </div>
         <div class="button-wrapper">
             <a class="button-link button-link--card js-link-stripe" href="${DEFAULT_LINK_STRIPE}" target="_blank" rel="noopener">
-                <span class="button-link__card-icon"></span>
+                <i class="button-link__card-icon"></i>
                 <span class="button-link__text">Card</span>
             </a>
             <a class="button-link button-link--paypal js-link-paypal" href="${DEFAULT_LINK_PAYPAL}" target="_blank" rel="noopener">
@@ -360,7 +360,7 @@ const cssText = `
     display: none;
 }
 .button-link__card-icon {
-    background-color: #ffce44;
+    background-color: #4c996f;
     border-radius: 0.2rem;
     display: inline-block;
     height: 1rem;
@@ -369,15 +369,27 @@ const cssText = `
     position: relative;
     width: 1.5rem;
 }
-.button-link__card-icon::after {
+.button-link__card-icon::before {
     background-color: black;
     content: "";
     display: inline-block;
-    height: 0.25rem;
+    height: 0.2rem;
     left: 0;
     position: absolute;
-    top: 0.25rem;
+    top: 0.2rem;
     width: 1.5rem;
+}
+.button-link__card-icon::after {
+    background-color: #e87a3a;
+    box-shadow: 0.25rem 0 0 #ffce44, inset 0.25rem 0 0 #dc4d40;
+    border-radius: 50%;
+    bottom: 0.1rem;
+    content: "";
+    display: inline-block;
+    height: 0.4rem;
+    left: 0.2rem;
+    position: absolute;
+    width: 0.4rem;
 }
 .button-link--card .button-link__text {
     text-transform: none;
