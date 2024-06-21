@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ヘルプ – Dark Reader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/images/icon-256.png" />
+    <link rel="stylesheet" type="text/css" href="/styles/help-topic.css" />
+    <meta name="theme-color" content="#141e24" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://darkreader.org/help/ja/" />
+    <meta property="og:title" content="ヘルプ – Dark Reader" />
+    <meta property="og:image" content="https://darkreader.org/images/darkreader-screenshot-v5-preview.png" />
+    <script>
+        if (navigator.userAgent.toLowerCase().includes('android')) {
+            document.documentElement.classList.add('android');
+        }
+    </script>
+</head>
+
+<body class="page-grid-body">
+    <header class="page-grid-header">
+        <a class="help-header-logo" href="../">ヘルプ – Dark Reader</a>
+    </header>
+    <article class="page-grid-content">
+        <h1>ヘルプ — Dark Reader</h1>
+        <p>Dark Reader の機能を解説します。</p>
+<ul>
+<li><a href="#faq">よくある質問</a></li>
+<li><a href="#contacts">問い合わせ先</a></li>
+<li><a href="../../tips/">上級者向けの使用法</a></li>
+</ul>
+<h2 id="options-icon">オプション用アイコン</h2>
+
+<img src="/images/help/darkreader-pin-toolbar-icon.png" alt="オプション用アイコン" style="width: 20rem;" loading="lazy" />
+
+<p>インストール後に Dark Reader のアイコンが表示されないことがあります。
+表示するには、 アドレスバーの右にある<strong>拡張機能</strong>ボタンをクリックし、Dark Reader の横のボタンをクリックします（解説が古い？）。</p>
+<h2 id="top-section">オプションの上部</h2>
+
+<img src="/images/help/darkreader-top-section.png" alt="オプションの上部ボタン" style="width: 15rem;" loading="lazy" />
+
+<ul>
+<li><strong>サイトの切り替え</strong>ボタンは、現在見ているサイトを無視リストに追加します（または除去）。</li>
+<li><strong>オン/オフ</strong>は、この拡張機能を有効化または無効化します。</li>
+<li>ボタンの下のリンクをクリックすると、拡張機能の<strong>ホットキーの変更</strong>です。</li>
+<li>注: 切り替えボタンが灰色で押せない場合、現在のページへのスクリプトの追加をブラウザが制限しています。</li>
+</ul>
+<h2 id="filter-settings">フィルタの調整</h2>
+
+<img src="/images/help/darkreader-filter-settings.png" alt="フィルタの設定画面" style="width: 15rem;" loading="lazy" />
+
+<p>モード、輝度、コントラスト、セピア、彩度（グレースケール）の設定を調整します。画面の設定値と部屋の照明の組み合わせの状態を調整できるでしょう。</p>
+<h2 id="custom-site-settings">特定のサイト用の設定</h2>
+
+<img src="/images/help/darkreader-custom-site-settings.png" alt="特定のサイト用の設定画面" style="width: 15rem;" loading="lazy" />
+
+<p><strong>このサイトのみ適用</strong>ボタンは、上記のフィルタの設定を現在のサイトにのみ適用します。</p>
+<p>使用するには、まずボタンをクリックし（選択状態の強調色になります）、それから現在のサイト用に調整します。再びボタンを押すとキャンセルされます。</p>
+<h2 id="site-list">サイトリスト</h2>
+
+<img src="/images/help/darkreader-site-list.png" alt="サイトリストの画面" style="width: 15rem;" loading="lazy" />
+
+<ul>
+<li><strong>反転リスト</strong>は、リストされたサイトでのみ Dark Reader を動作させたい場合です。</li>
+<li><strong>非反転リスト</strong>では、掲載したサイトで拡張機能の動作を阻止します。</li>
+<li>値に使える表記法は google.com, mail.google.com, google.*, google.com/maps など。</li>
+<li><strong>切り替え</strong>ボタン（<a href="#top-section">オプションの上部</a>）をクリックし、現在のサイトをこのリストに追加します。</li>
+</ul>
+<h2 id="more-tab">その他タブ tab</h2>
+
+<img src="/images/help/darkreader-more-tab.png" alt="その他のタブ" style="width: 15rem;" loading="lazy" />
+
+<ul>
+<li>一覧から <strong>フォントを選択</strong>し（または Firefox でフォント名を入力）、<strong>チェックボックス</strong>をクリックします。</li>
+<li><strong>文字の縁取り</strong>を調整します。</li>
+<li><strong>テーマの生成法</strong>を選択します。</li>
+</ul>
+<h2 id="theme-generation-modes">テーマの生成法</h2>
+
+<figure>
+    <img src="/images/help/darkreader-theme-modes.png" alt="フィルタ+、静的、動的" loading="lazy" />
+    <figcaption>左から、フィルタ+、静的、動的</figcaption>
+</figure>
+
+<ul>
+<li><strong>フィルタ</strong>は、CSS フィルタを基にした、最初の Dark Reader の動作法です。
+「<em>ページ全体を反転</em>」し、「<em>一部を元に戻す</em>」動作です。
+GPU リソースを使います。
+「<em>高速</em>」かつ強力ですが、少し問題があります:
+文字のサブピクセルを無効にし、
+既に暗い部分は明るく反転し、
+大きなページでは遅延し、
+Firefox では一部のページの描画に失敗します。</li>
+<li>**フィルタ+*<em>は、上記フィルタと同様ですが、独自の SVG フィルタに基づき
+「</em>色をより適切に処理*」し画像が冴えない色になりにくくします。
+Firefox ではうまく動作しません。</li>
+<li><strong>静的</strong>は、基本的なスタイルシートを素早く生成します。</li>
+<li><strong>動的</strong>は、サイトのスタイルシートと、背景画像、またベクター画像を細かく分析します。
+最初の読み込み時に一部のリソースを使いますが、
+「<em>最高</em>」の表示結果になります
+この動作法は開発中ですが、
+多くの最近のサイト上ですでに動作しています。</li>
+</ul>
+<h2 id="bottom-section">下部</h2>
+
+<img src="/images/help/darkreader-footer.png" alt="オプションの下部" style="width: 15rem;" loading="lazy" />
+
+<ul>
+<li><strong>個人情報</strong>は、私たちの個人情報保護方針です。<strong>Twitter</strong>をフォローしてね。<strong>Github</strong>でソースは貢献者をご覧ください。このページの<strong>ヘルプ</strong>もあります。</li>
+<li><strong>寄付する</strong> – 拡張機能を気に入っていただけたら、Dark Reader の開発支援をご検討ください。</li>
+<li><strong>ニュース</strong> – 更新履歴と重要なイベントをお知らせします。</li>
+<li><strong>開発ツール</strong> – 現在のテーマのモードの設定編集ウィンドウを開きます。</li>
+</ul>
+<h2 id="using-dev-tools">開発ツールの使用</h2>
+
+<p>CSS セレクタを理解されているなら、サイトのフィルターの改善を提案できます。
+ここで<a href="https://github.com/darkreader/darkreader#how-to-contribute">開発ツールの使用法</a>をご覧ください、</p>
+<h2 id="tips">上級者向けの使用法</h2>
+
+<p>もっと知りたいですか？<a href="../../tips/">コツと使い方</a>もご覧ください。</p>
+<h2 id="faq">よくある質問</h2>
+
+<h4 class="text-highlight">Dark Reader を支援する方法</h4>
+
+<ol>
+<li><a data-s="d-help-faq" href="https://darkreader.org/support-us">Dark Readerの使用料を支払う</a>。</li>
+<li><a data-s="drios-help-faq" href="https://apps.apple.com/us/app/dark-reader-for-safari/id1438243180">iOS/macOS のアプリ</a>を購入しインストールします。</li>
+<li>スポンサー用のアプリと拡張機能をインストールします。</li>
+<li>友達や仕事仲間に紹介してください。</li>
+</ol>
+<h4 id="拡張機能がサイトのデータを読み取る権限を要求しています">拡張機能がサイトのデータを読み取る権限を要求しています</h4>
+<p>本拡張機能は次の機能のために権限が必要です。サイトの外観を分析し、修正したり
+あなたが設定でサイトを無効にしていないか、特定のサイト用のルールを使うかを判断します。
+私たちは広告を挿入したり、なんらかのデータを収集しどこかへ送信したりはしません。
+本拡張機能は完全にオープンソースで難読化されたコードはありません。
+収益化も透明性があり、ユーザーからの寄付に基づいています。</p>
+<h4 id="拡張機能のストアのページと設定ページは白いままです">拡張機能のストアのページと設定ページは白いままです</h4>
+<p>本拡張機能はこれらのページにアクセスできません。</p>
+<h4 id="新規タブとページは白いです">新規タブとページは白いです</h4>
+<p>拡張機能は、新規タブやブラウザの見た目は変更できません（Firefox バージョン60以上なら可能）。
+拡張機能のサイトから、ダークテーマや、新規タブ用の拡張機能をインストールすることをお勧めします。</p>
+<h4 id="新規タブを開いたり、サイトに移動中に画面が一瞬白く光ります">新規タブを開いたり、サイトに移動中に画面が一瞬白く光ります</h4>
+<p>サイトを読み込む前に Chrome は標準でテーマの背景色を表示します。
+ストアからダークテーマをインストールすることをお勧めします、</p>
+<h4 id="この拡張機能がまったく動いていません">この拡張機能がまったく動いていません</h4>
+<p>同様のダークモードの拡張機能がインストール済みなら、それを無効にし、タブを再読み込みします。
+Dark Reader のアイコンをクリックし、右上のボタンが<strong>オン</strong>になっているか、<strong>サイトの切り替え</strong>が現在のサイトを除外していないか確認します。
+「<strong>サイトリスト</strong>」タブを開き、<strong>非反転リスト</strong>に選択されていないか確認します。
+助けにならず酷い事態が起きたらメールでお問い合わせください。</p>
+<h4 id="サイトが正しく表示されない、または動作が遅い">サイトが正しく表示されない、または動作が遅い</h4>
+<p>サイトのアドレス、スクリーンショット、OS とブラウザのバージョンをメールで送信してください。
+少なくとも、よく使われるサイトでは原因を調査します。
+<strong>テーマの生成法</strong>の変更を試すか、<strong>ライトモード</strong>をお試しください。
+「<strong>サイトリスト</strong>」のタブに追加されていないか確認してください。</p>
+<h4 id="拡張機能がシークレットモードでで動作しない">拡張機能がシークレットモードでで動作しない</h4>
+<p><strong>chrome://extensions</strong> のページを開き、<strong>Dark Reader</strong>を見つけシークレット（プライベート）モードでの実行を<strong>許可</strong>します。</p>
+<h4 id="拡張機能が端末内のファイルで動作しない">拡張機能が端末内のファイルで動作しない</h4>
+<p><strong>chrome://extensions</strong> のページを開き、<strong>Dark Reader</strong>を見つけ、<strong>ファイルの URL のアクセスを許可する</strong>。</p>
+<h4 id="フィルタモードでサイト全体が表示されない">フィルタモードでサイト全体が表示されない</h4>
+<p>Mac OS で Chrome を使っていれば、Mac OS を10.13にアップデートしてください。ビデオドライバが更新されます。
+あるいは Firefox を使っているならブラウザのバグの可能性が高く、そのようなサイトには別の動作法を選択します。</p>
+<h2 id="contacts">問い合わせ先</h2>
+
+<p>質問は英語でこちらへ: <a href="mailto:support@darkreader.org">support@darkreader.org</a>（英語で）</p>
+
+        <darkreader-pay-tiers></darkreader-pay-tiers>
+        <script type="module" src="/elements/pay-tiers.js"></script>
+        <darkreader-backers-header></darkreader-backers-header>
+        <script type="module" src="/elements/sponsors-top.js"></script>
+        <darkreader-support-us></darkreader-support-us>
+        <script type="module" src="/elements/sponsors-bottom.js"></script>
+    </article>
+    <aside class="page-grid-inside">
+        <darkreader-pay-tiers small></darkreader-pay-tiers>
+        <script type="module" src="/elements/pay-tiers.js"></script>
+        <darkreader-backers-header></darkreader-backers-header>
+        <script type="module" src="/elements/sponsors-top.js"></script>
+    </aside>
+    <aside class="page-grid-side">
+        <darkreader-backers-side></darkreader-backers-side>
+        <script type="module" src="/elements/sponsors-right.js"></script>
+    </aside>
+    <aside class="page-grid-left">
+        <ul></ul>
+        <script>
+            (() => {
+                const script = document.currentScript;
+                const list = document.querySelector('.page-grid-content > ul');
+                if (!script || !list) {
+                    return;
+                }
+                const parent = script.parentElement;
+                const placeholder = parent.querySelector('ul');
+                const copy = list.cloneNode(true);
+                copy.classList.add('nav');
+                placeholder.replaceWith(copy);
+                list.classList.add('list-copied');
+            })();
+        </script>
+        <darkreader-ios-static></darkreader-ios-static>
+        <script type="module" src="/elements/ios-static.js"></script>
+    </aside>
+    <aside class="page-grid-ios">
+        <darkreader-ios-side></darkreader-ios-side>
+        <script type="module" src="/elements/ios.js"></script>
+    </aside>
+</body>
+
+</html>
