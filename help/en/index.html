@@ -45,13 +45,13 @@ Ready? Let&#39;s go.</p>
 <li><a href="#contacts">Contacts</a></li>
 <li><a href="../../tips/">Tips for advanced users</a></li>
 </ul>
-<h2 id="options-icon">Toolbar icon</h2>
+<h2 id="options-icon">Toolbar Icon</h2>
 
 <img src="/images/help/darkreader-pin-toolbar-icon.png" alt="Options icon" style="width: 20rem;" loading="lazy" />
 
-<p>If Dark Reader <strong>icon is hidden</strong> after installation,
+<p>If the Dark Reader <strong>icon is hidden</strong> after installation,
 click the <strong>Extensions</strong> button next to the address bar and then another button next to Dark Reader.</p>
-<h2 id="top-section">Top section</h2>
+<h2 id="top-section">Top Section</h2>
 
 <img src="/images/help/darkreader-top-section.png" alt="Top section" style="width: 15rem;" loading="lazy" />
 
@@ -59,20 +59,20 @@ click the <strong>Extensions</strong> button next to the address bar and then an
 <li><strong>Toggle site</strong> button adds the current site into the ignore list (or removes it from there).</li>
 <li><strong>On/Off</strong> switch enables or disables the extension.</li>
 <li>Click on the links under the buttons to <strong>modify the hotkeys</strong> for the extension.</li>
-<li>Note: If the toggle button is greyed-out, it means that browser restricts injecting scripts into current page.</li>
+<li>Note: If the toggle button is greyed-out, it means that browser restricts injecting scripts into the current page.</li>
 </ul>
-<h2 id="filter-settings">Filter settings</h2>
+<h2 id="filter-settings">Filter Settings</h2>
 
 <img src="/images/help/darkreader-filter-settings.png" alt="Filter settings" style="width: 15rem;" loading="lazy" />
 
 <p>Adjust the mode, brightness, contrast, sepia, and saturation (&quot;grayscale&quot;) settings. This can be used to better suit your screen parameters and the lighting in the room.</p>
-<h2 id="custom-site-settings">Custom site settings</h2>
+<h2 id="custom-site-settings">Custom Site Settings</h2>
 
 <img src="/images/help/darkreader-custom-site-settings.png" alt="Custom settings" style="width: 15rem;" loading="lazy" />
 
 <p>The <strong>Only for</strong> button determines whether the above filter settings should only be applied to the current website.</p>
 <p>To use, first click the button (which will become highlighted), then adjust the settings as desired for the current website. Click the button again to cancel.</p>
-<h2 id="site-list">Site list</h2>
+<h2 id="site-list">Site List</h2>
 
 <img src="/images/help/darkreader-site-list.png" alt="Site list" style="width: 15rem;" loading="lazy" />
 
@@ -83,16 +83,16 @@ click the <strong>Extensions</strong> button next to the address bar and then an
 <li>Regular expressions are supported. They should start and end with <code>/</code>, like <code>/www\.google\..*/</code>.</li>
 <li>Clicking the <strong>Toggle</strong> button (in <a href="#top-section">Top section</a>) adds the current site into this list.</li>
 </ul>
-<h2 id="more-tab">More tab</h2>
+<h2 id="more-tab">More Tab</h2>
 
 <img src="/images/help/darkreader-more-tab.png" alt="More tab" style="width: 15rem;" loading="lazy" />
 
 <ul>
-<li><strong>Pick a font</strong> from list (or enter font name on Firefox), click the <strong>checkbox</strong>.</li>
+<li><strong>Pick a font</strong> from the list (or enter font name on Firefox), click the <strong>checkbox</strong>.</li>
 <li>Adjust the <strong>text stroke</strong>.</li>
 <li>Select a <strong>theme generation mode</strong>.</li>
 </ul>
-<h2 id="theme-generation-modes">Theme generation modes</h2>
+<h2 id="theme-generation-modes">Theme Generation Modes</h2>
 
 <figure>
     <img src="/images/help/darkreader-theme-modes.png" alt="Filter+ vs. Static vs. Dynamic mode" loading="lazy" />
@@ -100,7 +100,10 @@ click the <strong>Extensions</strong> button next to the address bar and then an
 </figure>
 
 <ul>
-<li><strong>Filter</strong> is the initial Dark Reader mode based on CSS filters.
+<li><strong>Dynamic</strong> deeply analyzes website style sheets, background images, and vector graphics.
+Requires some resources on initial page load,
+but produces <em>the best</em> visual results.</li>
+<li><strong>Filter</strong> mode is based on CSS filters.
 It <em>inverts the whole page</em> and <em>reverts some parts</em> back.
 Requires GPU resources.
 It is <em>fast</em> and powerful, but has several issues:
@@ -112,13 +115,8 @@ and fails to render some pages in Firefox.</li>
 and <em>handles colors better</em> making images less dull.
 Works poorly in Firefox.</li>
 <li><strong>Static</strong> rapidly generates a basic stylesheet.</li>
-<li><strong>Dynamic</strong> deeply analyzes website stylesheets, background images, and vector graphics.
-Requires some resources on initial page load,
-but produces <em>the best</em> visual results.
-The work on this mode is in progress,
-but it already works well for many modern websites.</li>
 </ul>
-<h2 id="bottom-section">Bottom section</h2>
+<h2 id="bottom-section">Bottom Section</h2>
 
 <img src="/images/help/darkreader-footer.png" alt="Bottom section" style="width: 15rem;" loading="lazy" />
 
@@ -128,11 +126,11 @@ but it already works well for many modern websites.</li>
 <li><strong>News</strong> – notifies about release notes and important events.</li>
 <li><strong>Developer tools</strong> – opens a config editor for the current theme mode.</li>
 </ul>
-<h2 id="using-dev-tools">Using the Developer tools</h2>
+<h2 id="using-dev-tools">Using the Developer Tools</h2>
 
 <p>If you are familiar with CSS selectors, you can help by suggesting a fix for filtering a website.
 Read how to use the developer tools <a href="https://github.com/darkreader/darkreader#how-to-contribute">here</a>.</p>
-<h2 id="tips">Tips for advanced users</h2>
+<h2 id="tips">Tips for Advanced Users</h2>
 
 <p>Do you want to learn more? Please visit our <a href="../../tips/">Tips &amp; Tricks</a> website section.</p>
 <h2 id="faq">Frequently Asked Questions</h2>
@@ -146,36 +144,30 @@ Read how to use the developer tools <a href="https://github.com/darkreader/darkr
 <li>Suggest to friends and colleagues.</li>
 </ol>
 <h4 id="the-extension-asks-for-permissions-to-read-website-data">The extension asks for permissions to read website data</h4>
-<p>The extension needs these permissions to be able to analyze and modify website appearance,
-determine if a website is disabled by your settings or to use site-specific rules.
-We do not insert ads and do not collect any data or send it anywhere.
-The extension is fully open-source and has no obfuscated code.
-Our monetization is transparent and is based on users&#39; donations.</p>
+<p>The extension needs these permissions to be able to analyze and modify website&#39;s appearance
+and apply site-specific settings.
+We do not insert ads and do not collect any data or send it anywhere.</p>
 <h4 id="the-extensions-store-page-and-settings-pages-remain-white">The extensions store page and settings pages remain white</h4>
 <p>The extension has no access to these pages.</p>
 <h4 id="new-tab-page-and-browser-theme-remain-white">New tab page and browser theme remain white</h4>
-<p>The extension cannot change the appearance of a new tab or browser (though in Firefox it can since version 60).
-We recommend installing a dark theme or a new tab extension from the extensions store.</p>
+<p>Select a dark theme in your browser settings.</p>
 <h4 id="screen-flashes-white-when-opening-a-new-tab-or-navigating-to-a-website">Screen flashes white when opening a new tab or navigating to a website</h4>
-<p>Before loading a website, Chrome shows the theme background color by default.
-We recommend installing a dark theme from the store.</p>
+<p>Before loading a website, the browser shows a theme background color by default.
+Select a dark theme in your browser settings.</p>
 <h4 id="the-extension-doesnt-work-at-all">The extension doesn&#39;t work at all</h4>
-<p>If you have similar dark mode extensions installed, disable them, then reload tabs.
-Click Dark Reader icon, check if top-right button is set to <strong>On</strong> and that <strong>Toggle site</strong> is not excluding the current site.
+<p>Update your browser.
+Click Dark Reader icon, check if the top-right button is set to <strong>On</strong> and that <strong>Toggle site</strong> is not excluding the current site.
 Open <strong>Site list</strong> tab, check that <strong>Not invert listed</strong> is selected.
 If nothing helps, something terrible has happened, e-mail us.</p>
 <h4 id="the-website-is-displayed-incorrectly-or-works-slowly">The website is displayed incorrectly or works slowly</h4>
-<p>Please send the website address, a screenshot, your OS and browser versions to our e-mail.
+<p>Please send the address of the website, a screenshot, your OS and browser versions to our e-mail.
 We will try to investigate the reason, at least for a popular website.
-Also try changing <strong>theme generation mode</strong> or try using <strong>Light mode</strong>.
+Try using <strong>Filter mode</strong> or <strong>Light mode</strong> for a specific website.
 Check that the website is not listed under <strong>Site list</strong> tab.</p>
-<h4 id="the-extension-doesnt-work-in-incognito-mode">The extension doesn&#39;t work in incognito mode</h4>
+<h4 id="the-extension-doesnt-work-in-incognito-mode">The extension doesn&#39;t work in Incognito mode</h4>
 <p>Open <strong>chrome://extensions</strong> page, find <strong>Dark Reader</strong>, click <strong>Allow in incognito</strong>.</p>
 <h4 id="the-extension-doesnt-work-for-local-files">The extension doesn&#39;t work for local files</h4>
 <p>Open <strong>chrome://extensions</strong> page, find <strong>Dark Reader</strong>, click <strong>Allow access to file URLs</strong>.</p>
-<h4 id="entire-website-is-not-displayed-in-filter-mode">Entire website is not displayed in Filter mode</h4>
-<p>If you are using Chrome for Mac OS, update Mac OS up to 10.13, this should update your video drivers.
-If you are using Firefox, this is most likely a browser bug, use another mode for such websites.</p>
 <h2 id="contacts">Contacts</h2>
 
 <p>For any questions e-mail to <a href="mailto:support@darkreader.org">support@darkreader.org</a></p>
