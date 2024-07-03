@@ -29,14 +29,7 @@
 <ul>
 <li><a href="#faq">FAQ</a></li>
 <li><a href="#contacts">Contatos</a></li>
-<li><a href="#top-section">Seção superior</a></li>
-<li><a href="#filter-settings">Configurações de filtro</a></li>
-<li><a href="#custom-site-settings">Configurações personalizadas para sites</a></li>
-<li><a href="#site-list">Lista de sites</a></li>
-<li><a href="#more-tab">A aba mais</a></li>
-<li><a href="#theme-generation-modes">Modos de geração de temas</a></li>
-<li><a href="#bottom-section">Seção inferior</a></li>
-<li><a href="#using-dev-tools">Usando as ferramentas de desenvolvedor</a></li>
+<li><a href="../../tips/">Conselhos para usuários experientes</a></li>
 </ul>
 <h2 id="top-section">Seção superior</h2>
 
@@ -86,6 +79,9 @@
 </figure>
 
 <ul>
+<li><strong>Dinâmico</strong> analisa profundamente a folha de estilo da página, imagens de fundo, gráficos vetoriais.
+Requer o consumo de alguns recursos para o carregamento inicial da página,
+mas produz <strong>o melhor</strong> resultado visual.</li>
 <li><strong>Filtro</strong> é o modo inicial do Dark Reader, baseado nos filtros CSS.
 Ele <strong>inverte a página inteira</strong> e <strong>reverte algumas partes</strong> de volta.
 Requer consumo de recursos da GPU.</li>
@@ -100,11 +96,6 @@ falha em renderizar algumas páginas no Firefox.</p>
 e <strong>lida melhor com cores</strong>, tornando as imagens menos opacas.
 funciona mal no Firefox.</li>
 <li><strong>Estático</strong> rapidamente gera uma folha de estilo básica.</li>
-<li><strong>Dinâmico</strong> analisa profundamente a folha de estilo da página, imagens de fundo, gráficos vetoriais.
-Requer o consumo de alguns recursos para o carregamento inicial da página,
-mas produz <strong>o melhor</strong> resultado visual.
-O desenvolvimento desse modo ainda está em progresso,
-mas ele já funciona bem para muitos sites modernos.</li>
 </ul>
 <h2 id="bottom-section">Seção inferior</h2>
 
@@ -125,9 +116,7 @@ Leia como usar as ferramentas de desenvolvedor <a href="https://github.com/darkr
 <h4 id="a-extensão-pede-permissão-para-ler-os-dados-dos-sites">A extensão pede permissão para ler os dados dos sites</h4>
 <p>A extensão precisa dessas permissões para conseguir analisar e modificar a aparência do site,
 determinar se o site está desabilitado pelas suas configurações ou usar uma regra específica para o site.
-Nós não inserimos propagandas, não coletamos nenhum dado e nem enviamos nada para lugar nenhum.
-A extensão tem seu código completamente aberto e não possui nenhum código ofuscado.
-Nossa monetização é transparente e é baseada na doação de nossos usuários.</p>
+Nós não inserimos propagandas, não coletamos nenhum dado e nem enviamos nada para lugar nenhum.</p>
 <h4 id="a-página-da-loja-de-extensões-e-a-página-de-configurações-continuam-brancas">A página da loja de extensões e a página de configurações continuam brancas</h4>
 <p>A extensão não tem acesso a essas páginas.</p>
 <h4 id="a-página-de-nova-guia-e-o-tema-do-navegador-continuam-brancos">A página de nova guia e o tema do navegador continuam brancos</h4>
@@ -150,9 +139,6 @@ Verifique se o site não está listado na aba de <strong>Lista de sites</strong>
 <p>Abra a página <strong>chrome://extensions</strong>, encontre o <strong>Dark Reader</strong>, clique em <strong>Habilitar no modo anônimo</strong>.</p>
 <h4 id="a-extensão-não-funciona-em-arquivos-locais">A extensão não funciona em arquivos locais</h4>
 <p>Abra a página <strong>chrome://extensions</strong>, encontre o <strong>Dark Reader</strong>, clique em <strong>Habilitar acesso a URLs de arquivos</strong>.</p>
-<h4 id="um-site-inteiro-não-é-exibido-no-modo-filtro">Um site inteiro não é exibido no modo Filtro</h4>
-<p>Se você está usando Chrome para Mac OS, atualize o Mac OS até a versão 10.13, isso deve atualizar seus drivers de vídeo.
-Se você está usando o Firefox, isso provavelmente é um erro do navegador, use outro modo para este site.</p>
 <h2 id="contacts">Contatos</h2>
 
 <p>Para qualquer dúvida, envie um e-mail (em inglês) para <a href="mailto:support@darkreader.org">support@darkreader.org</a></p>
