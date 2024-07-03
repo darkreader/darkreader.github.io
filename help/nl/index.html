@@ -152,7 +152,7 @@ Controleer of de website niet voorkomt op het tabblad <strong>Site list</strong>
         <script type="module" src="/elements/sponsors-bottom.js"></script>
     </article>
     <aside class="page-grid-inside">
-        <darkreader-pay-tiers small></darkreader-pay-tiers>
+        <darkreader-pay-tiers></darkreader-pay-tiers>
         <script type="module" src="/elements/pay-tiers.js"></script>
         <darkreader-backers-top-short></darkreader-backers-top-short>
         <script type="module" src="/elements/sponsors-top-short.js"></script>
@@ -162,6 +162,19 @@ Controleer of de website niet voorkomt op het tabblad <strong>Site list</strong>
     <aside class="page-grid-side">
         <darkreader-backers-side></darkreader-backers-side>
         <script type="module" src="/elements/sponsors-right.js"></script>
+        <script defer>
+            (() => {
+                const check = () => {
+                    const box = document.querySelector('.page-grid-inside').getBoundingClientRect();
+                    document.querySelector('.page-grid-side').classList.toggle('page-grid-side--visible', box.top < 0);
+                };
+
+                check();
+
+                addEventListener('scroll', check);
+                addEventListener('resize', check);
+            })();
+        </script>
     </aside>
     <aside class="page-grid-left">
         <ul></ul>
