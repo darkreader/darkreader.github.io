@@ -2,7 +2,7 @@
 
 import './sponsors-graph.js';
 import './pay-tiers.js';
-import {country, isEUCountry, isHCountry} from './locales.js';
+import {country, isEUCountry, isHCountry, isPCountry} from './locales.js';
 import {clicker} from './stats.js';
 import {
     createHTMLElement as html,
@@ -22,6 +22,9 @@ const buttonIcon = `<span class="b-icon${isEdge ? ' b-icon--edge' : isSafari ? '
 const htmlText = `
 <section class="pr">
     <darkreader-pay-tiers></darkreader-pay-tiers>
+</section>
+<section class="pie">
+    <darkreader-backers-top-short side></darkreader-backers-top-short>
 </section>
 <section class="mob">
     <div class="mob-subtitle">
@@ -623,6 +626,12 @@ section {
     height: 5rem;
     width: 5rem;
 }
+.pie {
+    margin-bottom: 2rem;
+}
+:host(:not(.c-p)) .pie {
+    display: none;
+}
 `;
 
 class BackersSideElement extends HTMLElement {
@@ -648,6 +657,7 @@ class BackersSideElement extends HTMLElement {
         shadowRoot.querySelectorAll('[data-s]').forEach((node) => clicker(node, node.getAttribute('data-s') ?? ''));
 
         shadowRoot.host.classList.toggle('c-h', isHCountry);
+        shadowRoot.host.classList.toggle('c-p', isPCountry);
         shadowRoot.host.classList.toggle('c-cn', document.documentElement.lang === 'zh-CN');
     }
 }
