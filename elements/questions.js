@@ -24,10 +24,14 @@ const cssText = `
 .container {
     background-color: var(--color-bg);
 }
-p, a {
-    color: #53b39f;
+p {
+    color: var(--color-text);
     font-family: monospace;
+    font-weight: bold;
     width: 16rem;
+}
+a {
+    color: var(--color-highlight);
 }
 .print {
     color: white;
@@ -54,7 +58,7 @@ img {
     mix-blend-mode: lighten;
     width: 8rem;
 }
-img[src*="darkreader-icon-edges.png"] {
+img[src*="darkreader-icon-"] {
     width: 4rem;
 }
 figure::after {
@@ -95,7 +99,7 @@ class BackerTopShortElement extends HTMLElement {
         $(shadowRoot).find('[data-s]').each((node) => clicker(node, node.getAttribute('data-s') ?? ''));
 
         const startText = [
-            `![Assistant](/images/darkreader-icon-edges.png)`,
+            `![Assistant](/images/darkreader-icon-256x256.png)`,
             `Hey there! Let me assist you today. Just a few things you should know:`,
             `1. Please read this manual or scroll down and watch a 1 minute video showing how to use Dark Reader ▶️.`,
             ...(isSafari ? [
@@ -108,7 +112,7 @@ class BackerTopShortElement extends HTMLElement {
             `![QR code](/images/qr-code.png)`,
             `Enjoy browsing with dark mode!`,
             ...(isPCountry ? [
-                `P.S. If you are a fan of our extension and want to continue supporting us, please visit our friends at Pie. They are a browser extension that allows you to block ads and get paid. Check it out for a more seamless browsing experience.`,
+                `P.S. Our friends at Pie offer a browser extension that allows you to block ads and get paid.`,
                 `[Learn more](${pieURL})`,
             ] : []),
         ];
