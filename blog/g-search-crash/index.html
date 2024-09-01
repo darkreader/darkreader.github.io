@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>How to fix the recent Google Search issue – Dark Reader blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/images/icon-256.png" />
+    <link rel="stylesheet" type="text/css" href="/styles/blog-post.css" />
+    <meta name="theme-color" content="#141e24" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://darkreader.org/blog/g-search-crash/" />
+    <meta property="og:title" content="How to fix the recent Google Search issue – Dark Reader blog" />
+    <meta property="og:image" content="https://darkreader.org/images/aw-snap.png" />
+    <meta property="og:description" content="On August 28-29, Google Chrome and Microsoft Edge released critical updates (versions 128.0." />
+</head>
+
+<body class="page-grid-body">
+    <header class="page-grid-header">
+        <a class="header-logo" href="../"></a>
+    </header>
+    <main class="page-grid-content">
+        <article>
+            <h6>September 1, 2024</h6>
+
+            <h1 id="how-to-fix-the-recent-google-search-issue">How to fix the recent Google Search issue</h1>
+<p>On August 28-29, Google Chrome and Microsoft Edge released critical updates
+(versions 128.0.6613.114 and 128.0.2739.54 respectively)
+which addressed security vulnerabilities. 
+Unfortunately, we&#39;ve been receiving unusual bug reports since then.
+<strong>While a patch is on the way, here’s how you can tackle the issue in the meantime</strong>.</p>
+<figure>
+    <img src="/images/aw-snap.png" alt="Aw, Snap!" />
+</figure>
+
+<h3 id="relationships">Relationships</h3>
+<p>Shortly after the problem arose, <strong>we started receiving numerous 1-star ratings</strong>.
+Many people have happily used Dark Reader for years, yet this is how they respond.
+Not only do <strong>99.9% of users ignore our calls for financial support</strong>.
+But some even go further by ruining our rating and placement in the store.
+Please remember that there are real people behind the app,
+and <strong>such behavior from our users is deeply demotivating</strong>.</p>
+<figure>
+    <img src="/images/angry-feedback.webp" alt="Angry feedback">
+</figure>
+
+<p>The best way to report an issue is by <strong>emailing us with screenshots and steps to reproduce the problem</strong>.
+Tech-savvy users can also <strong>report issues on GitHub</strong>.
+Thanks to the user who has recorded a video, so that we could finally see where to begin.</p>
+<p>Some say that Dark Reader has become worse and slower, but the truth is quite the opposite.
+Over the past year, <strong>we’ve implemented massive performance enhancements</strong> and <strong>significant memory optimizations</strong>.
+Yet, the web itself is evolving rapidly—web applications are growing more complex,
+standards and frameworks are constantly shifting, and <strong>websites are demanding more and more resources</strong>.</p>
+<figure>
+    <img src="/images/ram-comparison.webp" alt="RAM usage comparison">
+    <figcaption>
+        The browser tab on the left consumes 400MB of RAM (the browser consumes 900MB RAM). On the right is an intense 3D video game running on a console with 32MB RAM (YT@JohnGlasscock).
+    </figcaption>
+</figure>
+
+<p>We are relentlessly <strong>refining the app&#39;s engine</strong>, making it faster, more reliable, and ready to tackle new challenges.
+Meanwhile, our efforts to <strong>enhance theme customization</strong> continue at full speed.
+We deliver the best service possible within our budget and often go above and beyond—<strong>working tirelessly</strong>, even on holidays and weekends.</p>
+<p>If you ask, <strong>&quot;How can I support such a great service?&quot;</strong> we have an answer. We’re now offering easy payment options: PayPal and Stripe (for card transactions). If you haven&#39;t supported us yet and have been using Dark Reader for a while,
+<strong>now is the perfect time for a one-time payment</strong>.</p>
+<p><darkreader-pay-tiers blog style="width: 16rem;"></darkreader-pay-tiers></p>
+<script type="module" src="/elements/pay-tiers.js"></script>
+
+<h3 id="google-search-problem">Google Search problem</h3>
+<figure>
+    <img src="/images/chromium-aw-snap.gif" alt="Demonstration of the Aw,Snap issue">
+</figure>
+
+<p>The problem occurs on the Google Search website and primarily <strong>affects Windows user</strong>.
+If your browser <strong>window is small</strong>, you may encounter the &quot;Aw, Snap&quot; error when switching between the Google Search menus.
+The Chromium bug has been reported and number <a href="https://issues.chromium.org/issues/363544341">363544341</a> was assigned.
+You can <strong>star the issue to draw more attention from the Chromium developers</strong>.</p>
+<p>We have already <strong>made a patch in version 4.9.90</strong> 🎉🎉🎉
+and are currently awaiting manual review from the Google and Microsoft Store teams.</p>
+<blockquote class="pie-help">
+    <p>
+        <a class="small-pie-logo" target="_blank" rel="noopener" data-s="pie-blog-badge"
+            href="https://pie.org/adblock?utm_source=bizdev&utm_medium=cpc&utm_campaign=na_na_us_bizdev_na_na_na_na_adblock&utm_term=na_na_us_bizdev_na_na_na_na_adblock_na_na_na_na_all_na_darkreader&utm_content=na_na_us_bizdev_na_na_na_na_adblock_na_na_na_na_all_na_darkreader_na_na_na_na_na_na_na">
+            Pie
+        </a>
+        Check Out Our Friends at <strong><a target="_blank" rel="noopener" data-s="pie-blog-text"
+            href="https://pie.org/adblock?utm_source=bizdev&utm_medium=cpc&utm_campaign=na_na_us_bizdev_na_na_na_na_adblock&utm_term=na_na_us_bizdev_na_na_na_na_adblock_na_na_na_na_all_na_darkreader&utm_content=na_na_us_bizdev_na_na_na_na_adblock_na_na_na_na_all_na_darkreader_na_na_na_na_na_na_na">
+                Pie</a></strong>!
+    </p>
+    <p>
+        Not only they <strong>block ads</strong>, they do it in style.
+        With features like <strong>Visual Mode</strong>, you can actually watch ads disappear in real-time, making browsing even more satisfying.
+        Plus, if you opt into ads, <strong>you can get paid</strong>, which is a pretty sweet deal.
+    </p>
+    <p>
+        And the best part? Pie is  <strong>completely free</strong> and gives you <strong>premium features at no cost</strong>.
+        <strong><a target="_blank" rel="noopener" data-s="pie-blog-text"
+            href="https://pie.org/adblock?utm_source=bizdev&utm_medium=cpc&utm_campaign=na_na_us_bizdev_na_na_na_na_adblock&utm_term=na_na_us_bizdev_na_na_na_na_adblock_na_na_na_na_all_na_darkreader&utm_content=na_na_us_bizdev_na_na_na_na_adblock_na_na_na_na_all_na_darkreader_na_na_na_na_na_na_na">
+                Learn more</a></strong>.
+    </p>
+</blockquote>
+
+<h3 id="how-to-fix-the-problem">How to fix the problem</h3>
+<p>There are several solutions, choose what suits you better.</p>
+<ol>
+<li><p><strong>Simply wait for a few days until the patch arrives</strong>.
+Maximize your browser window to avoid triggering the issue.
+Check Dark Reader version number at <strong>More</strong>, <strong>All settings</strong>, <strong>About</strong>, <strong>Version</strong>.
+The patch should arrive in version 4.9.90.</p>
+</li>
+<li><p>Go to <a href="chrome://flags">chrome://flags</a> (or <a href="edge://flags">edge://flags</a>) page.
+Search for <strong><code>#view-transition-on-navigation</code></strong> flag and <strong>Disable</strong> it.
+Restart the browser.
+Revert to the <strong>Default</strong> option after our patch arrives.</p>
+</li>
+</ol>
+<figure>
+    <img src="/images/navigation-flag.png" alt="viewTransition API for navigation">
+</figure>
+
+<ol start="3">
+<li>The next tip is for advanced users, <strong>do at your own risk</strong>.</li>
+</ol>
+<ul>
+<li>Click Dark Reader <strong>icon</strong>.</li>
+<li>Right-click somewhere in the popup and click <strong>Inspect</strong>.</li>
+<li>Switch to <strong>Console</strong> tab.</li>
+<li>Copy and paste the following script after the <strong>&gt;</strong> symbol and press <strong>Enter</strong> (you may be asked to type <strong><code>allow pasting</code></strong>):<pre><code class="language-js">chrome.storage.local.get({syncSettings:true},
+t=&gt;{var s=chrome.storage[t?&#39;sync&#39;:&#39;local&#39;];
+s.get([&#39;theme&#39;],x=&gt;s.set({theme:{...x.theme,scrollbarColor:&#39;&#39;}},
+()=&gt;chrome.runtime.reload()))})
+</code></pre>
+</li>
+<li><strong>Reload the affected tabs</strong>.</li>
+</ul>
+<ol start="4">
+<li>If Google Search appears with its own dark theme,
+activate <strong>Dark Theme Detection</strong> option in Dark Reader.</li>
+</ol>
+<figure>
+    <img src="/images/detect-dark-theme-menu.png" alt="Dark Theme Detection" style="max-width: 18rem;">
+</figure>
+
+<p>The issue should be resolved if you choose any of these methods.
+If you continue to experience problems with Google Search, please <strong>contact us</strong>.</p>
+<style>
+    darkreader-donate-mascot {
+        display: none;
+    }
+</style>
+
+
+            <p>
+                <darkreader-donate-mascot></darkreader-donate-mascot>
+                <script type="module" src="/elements/donate-mascot.js"></script>
+            </p>
+        </article>
+    </main>
+    <footer class="page-grid-footer">
+        <nav>
+            <div class="read-next">
+                <span class="read-next__top">Read next</span>
+                <span class="read-next__icon" style="background-image: url('https://darkreader.org/images/thanks-blog-icon.png')"></span>
+                <a href="/blog/thanks-2023/" class="read-next__title">Big Thanks & Big Apologies</a>
+            </div>
+        </nav>
+    </footer>
+    <aside class="page-grid-inside">
+        <darkreader-backers-top-short horizontal></darkreader-backers-top-short>
+        <script type="module" src="/elements/sponsors-top-short.js"></script>
+    </aside>
+    <aside class="page-grid-side">
+        <darkreader-backers-side></darkreader-backers-side>
+        <script type="module" src="/elements/sponsors-right.js"></script>
+    </aside>
+    <aside class="page-grid-left">
+        <darkreader-ios-static></darkreader-ios-static>
+        <script type="module" src="/elements/ios-static.js"></script>
+    </aside>
+    <aside class="page-grid-ios">
+        <darkreader-ios-side></darkreader-ios-side>
+        <script type="module" src="/elements/ios.js"></script>
+    </aside>
+    <script>
+        document.querySelectorAll('video').forEach((video) => {
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
