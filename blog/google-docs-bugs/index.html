@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Fixing Google Docs and Turkish translation in Chrome 136 – Dark Reader blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/images/icon-256.png" />
+    <link rel="stylesheet" type="text/css" href="/styles/blog-post.css" />
+    <meta name="theme-color" content="#141e24" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://darkreader.org/blog/google-docs-bugs/" />
+    <meta property="og:title" content="Fixing Google Docs and Turkish translation in Chrome 136 – Dark Reader blog" />
+    <meta property="og:image" content="https://darkreader.org/images/google-docs-bug.png" />
+    <meta property="og:description" content="" />
+</head>
+
+<body class="page-grid-body">
+    <header class="page-grid-header">
+        <a class="header-logo" href="../"></a>
+    </header>
+    <main class="page-grid-content">
+        <article>
+            <h6>May 7, 2025</h6>
+
+            <h1 id="fixing-google-docs-and-turkish-translation-in-chrome-136">Fixing Google Docs and Turkish translation in Chrome 136</h1>
+<p>Dear Users, </p>
+<p>Please see how to fix a toolbar and scrollbar issues in <strong>Google Docs and Google Sheets</strong> happening in the latest <strong>Chrome 136</strong> and <strong>Edge 136</strong> updates.</p>
+<figure>
+    <img src="/images/google-docs-bug.png" alt="Google Docs bug" style="max-width: 24rem;">
+</figure>
+
+<h3 id="fix-for-google-docs">Fix for Google Docs</h3>
+<p>Our patch is already available for Microsoft Edge browser, and is currently being reviewed by Google.</p>
+<p>To fix the issue manually, please open Dark Reader, click <strong>More</strong>, and select <strong>Filter</strong> mode (instead of Filter+),
+ensuring <strong>Only for docs.google.com</strong> is selected (otherwise the theme mode will apply to all other websites).</p>
+<figure>
+    <img src="/images/google-docs-filter.png" alt="Fix for Google Docs" style="max-width: 18rem;">
+</figure>
+
+<p>You can learn more about Filter mode <a href="https://darkreader.org/blog/filter-mode/">here</a>.</p>
+<h3 id="turkish-language-bug">Turkish Language Bug</h3>
+<p>Also, Google Chrome has a bug with the Turkish language in Dark Reader and other extensions.</p>
+<figure>
+    <img src="/images/turkish-language-error.png" alt="Turkish language error" style="max-width: 18rem;">
+</figure>
+
+<p>If you open <strong>chrome://extensions</strong> page and see “Bu uzantı bozuk olabilir” message,
+please go to <strong>chrome://settings/languages</strong> and select <strong>English</strong> in Chrome settings.
+Select it to use for browser menus (or move up in macOS).</p>
+<figure>
+    <img src="/images/chrome-language.png" alt="Setting Chrome-language" style="max-width: 24rem;">
+</figure>
+
+<p>Your support is very important to us. We constantly work on improving Dark Reader.</p>
+<p>Best wishes,<br>
+The Dark Reader team.</p>
+
+
+            <p>
+                <darkreader-donate-mascot></darkreader-donate-mascot>
+                <script type="module" src="/elements/donate-mascot.js"></script>
+            </p>
+        </article>
+    </main>
+    <footer class="page-grid-footer">
+        <nav>
+            <div class="read-next">
+                <span class="read-next__top">Read next</span>
+                <span class="read-next__icon" style="background-image: url('https://cdn.darkreader.app/images/firefox-reddit-blog-icon.png')"></span>
+                <a href="/blog/firefox-bugs/" class="read-next__title">Firefox fixes and upcoming performance improvements</a>
+            </div>
+        </nav>
+    </footer>
+    <aside class="page-grid-inside">
+        <darkreader-backers-top-short></darkreader-backers-top-short>
+        <script type="module" src="/elements/sponsors-top-short.js"></script>
+    </aside>
+    <aside class="page-grid-side">
+        <darkreader-backers-side></darkreader-backers-side>
+        <script type="module" src="/elements/sponsors-right.js"></script>
+    </aside>
+    <aside class="page-grid-left">
+        <darkreader-ios-static></darkreader-ios-static>
+        <script type="module" src="/elements/ios-static.js"></script>
+    </aside>
+    <aside class="page-grid-ios">
+        <darkreader-ios-side></darkreader-ios-side>
+        <script type="module" src="/elements/ios.js"></script>
+    </aside>
+    <script>
+        document.querySelectorAll('video').forEach((video) => {
+            video.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
