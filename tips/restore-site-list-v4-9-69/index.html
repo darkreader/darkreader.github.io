@@ -22,11 +22,11 @@
     </header>
     <main class="page-grid-content">
         <article>
-            <h1 id="how-to-restore-a-missing-site-list-after-v4969-update">How to restore a missing Site List after v4.9.69 update</h1>
+            <h1>How to restore a missing Site List after v4.9.69 update</h1>
 <p>There was an error in version <strong>4.9.69</strong>: users who had a very big <strong>Site List</strong> may have it disappeared 🤷.
 Only Google Chrome users could have this update.
 Here are some instructions for restoring a part of the Site List.</p>
-<h3 id="storage">Storage</h3>
+<h3>Storage</h3>
 <p>There are 2 types of extension&#39;s storage:</p>
 <ul>
 <li><strong><code>sync</code></strong> synchronizes settings across devices (default).</li>
@@ -35,8 +35,8 @@ Here are some instructions for restoring a part of the Site List.</p>
 <p>When users hit a <strong>size limit</strong>, they are switched from <code>sync</code> to <code>local</code> storage.
 Due to <strong>The Bug</strong> the Site List was removed from the <code>local</code> storage.
 But some websites could be still saved in the <code>sync</code> storage.</p>
-<h2 id="restoring-the-site-list">Restoring the Site List</h2>
-<h3 id="opening-the-extensions-background-console">Opening the extensions&#39; background Console</h3>
+<h2>Restoring the Site List</h2>
+<h3>Opening the extensions&#39; background Console</h3>
 <ol>
 <li>Go to <a href="chrome://extensions">chrome://extensions</a> page.</li>
 <li>Enable <strong>Developer mode</strong>.</li>
@@ -45,7 +45,7 @@ But some websites could be still saved in the <code>sync</code> storage.</p>
 </ol>
 <img src="/images/tips/bug-4-9-69-page.png" alt="Chrome Extensions page" style="width: 24rem;" loading="lazy" />
 
-<h3 id="viewing-the-stored-site-list">Viewing the stored Site List</h3>
+<h3>Viewing the stored Site List</h3>
 <style>
     pre {
         background-color: #090e10;
@@ -87,7 +87,7 @@ If you see <strong><code>syncSettings: false</code></strong> it means it is turn
     },
 );
 </code></pre>
-<h3 id="moving-sites-from-sync-to-local-storage">Moving sites from Sync to Local storage</h3>
+<h3>Moving sites from Sync to Local storage</h3>
 <p>The following code snippet copies the sites from the Sync storage into the Local storage and reloads the extension:</p>
 <pre><code>chrome.storage.sync.get(
     {
@@ -104,7 +104,7 @@ If you see <strong><code>syncSettings: false</code></strong> it means it is turn
     },
 );
 </code></pre>
-<h3 id="enabling-settings-synchronization">Enabling settings synchronization</h3>
+<h3>Enabling settings synchronization</h3>
 <p>The following code snippet enables the settings synchronization:</p>
 <pre><code>chrome.storage.local.set(
     {
@@ -115,7 +115,7 @@ If you see <strong><code>syncSettings: false</code></strong> it means it is turn
     },
 );
 </code></pre>
-<h2 id="reducing-the-site-list">Reducing the Site List</h2>
+<h2>Reducing the Site List</h2>
 <p>Please consider the following options to avoid the Site List becoming large:</p>
 <ol>
 <li><strong>Detect Dark Theme</strong> option.</li>

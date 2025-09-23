@@ -24,7 +24,7 @@
         <article>
             <h6>September 1, 2024</h6>
 
-            <h1 id="how-to-fix-the-recent-google-search-issue">How to fix the recent Google Search issue</h1>
+            <h1>How to fix the recent Google Search issue</h1>
 <p>On August 28-29, Google Chrome and Microsoft Edge released critical updates
 (versions 128.0.6613.114 and 128.0.2739.54 respectively)
 which addressed security vulnerabilities. 
@@ -34,7 +34,7 @@ Unfortunately, we&#39;ve been receiving unusual bug reports since then.
     <img src="/images/aw-snap.png" alt="Aw, Snap!" />
 </figure>
 
-<h3 id="relationships">Relationships</h3>
+<h3>Relationships</h3>
 <p>Shortly after the problem arose, <strong>we started receiving numerous 1-star ratings</strong>.
 Many people have happily used Dark Reader for years, yet this is how they respond.
 Not only do <strong>99.9% of users ignore our calls for financial support</strong>.
@@ -67,7 +67,7 @@ We deliver the best service possible within our budget and often go above and be
 <p><darkreader-pay-tiers blog style="width: 16rem;"></darkreader-pay-tiers></p>
 <script type="module" src="/elements/pay-tiers.js"></script>
 
-<h3 id="google-search-problem">Google Search problem</h3>
+<h3>Google Search problem</h3>
 <figure>
     <img src="/images/chromium-aw-snap.gif" alt="Demonstration of the Aw,Snap issue">
 </figure>
@@ -103,7 +103,7 @@ and are currently awaiting manual review from the Google and Microsoft Store tea
 </blockquote>
 -->
 
-<h3 id="how-to-fix-the-problem">How to fix the problem</h3>
+<h3>How to fix the problem</h3>
 <p><em>Update for Microsoft Edge: the version 4.9.90 has passed the review after our request on September 2 and should be available in the Store shortly 🎉🎉🎉! Google refused to perform an expedited review, despite the issue being on Google&#39;s side. The fix hasn&#39;t been reviewed since the morning of September 1.</em></p>
 <p><em>Update for Google Chrome: the version 4.9.90 has passed the review and is available in the Store.</em></p>
 <p>There are several solutions, choose what suits you better.</p>
@@ -130,12 +130,14 @@ Revert to the <strong>Default</strong> option after our patch arrives.</p>
 <li>Click Dark Reader <strong>icon</strong>.</li>
 <li>Right-click somewhere in the popup and click <strong>Inspect</strong>.</li>
 <li>Switch to <strong>Console</strong> tab.</li>
-<li>Copy and paste the following script after the <strong>&gt;</strong> symbol and press <strong>Enter</strong> (you may be asked to type <strong><code>allow pasting</code></strong>):<pre><code class="language-js">chrome.storage.local.get({syncSettings:true},
+<li>Copy and paste the following script after the <strong>&gt;</strong> symbol and press <strong>Enter</strong> (you may be asked to type <strong><code>allow pasting</code></strong>):</li>
+</ul>
+<pre><code class="language-js">chrome.storage.local.get({syncSettings:true},
 t=&gt;{var s=chrome.storage[t?&#39;sync&#39;:&#39;local&#39;];
 s.get([&#39;theme&#39;],x=&gt;s.set({theme:{...x.theme,scrollbarColor:&#39;&#39;}},
 ()=&gt;chrome.runtime.reload()))})
 </code></pre>
-</li>
+<ul>
 <li><strong>Reload the affected tabs</strong>.</li>
 </ul>
 <ol start="4">
