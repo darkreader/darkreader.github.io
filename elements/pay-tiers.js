@@ -141,6 +141,7 @@ const locales = {
         one_time: '一次性付款',
         pay_with: '',
         price_per_user: '每位用户价格',
+        payment_description: '用户一次性付费',
         region_currency: '货币',
         pay: '支付',
         save: '节省',
@@ -158,6 +159,7 @@ const locales = {
         corporate: 'Organisationen',
         one_time: 'Einmalzahlung',
         price_per_user: 'Preis pro Benutzer',
+        payment_description: 'Einmalige Zahlung pro Nutzer',
         pay: 'Zahlen',
         save: 'Sparen',
         hint: 'Nutzung am Arbeitsplatz?<br>Bitten Sie Ihren Chef,<br>die Kosten für<br>Barrierefreiheits-<br>Software zu übernehmen.',
@@ -174,6 +176,7 @@ const locales = {
         corporate: 'Organisations',
         one_time: 'Paiement unique',
         price_per_user: 'Prix par utilisateur',
+        payment_description: 'Paiement unique par utilisateur',
         pay: 'Payer',
         save: 'Économisez',
         hint: `Vous l'utilisez au travail?<br>Demandez à votre patron<br>de payer le logiciel<br>d'accessibilité.`,
@@ -190,6 +193,7 @@ const locales = {
         corporate: 'Organizaciones',
         one_time: 'Pago único',
         price_per_user: 'Precio por usuario',
+        payment_description: 'Pago único por usuario',
         pay: 'Pagar',
         save: 'Ahorra',
         hint: '¿Lo usas en el trabajo?<br>Pídele a tu jefe que<br>pague el software de<br>accesibilidad.',
@@ -206,6 +210,7 @@ const locales = {
         corporate: 'Organisaties',
         one_time: 'Eenmalige betaling',
         price_per_user: 'Prijs per gebruiker',
+        payment_description: 'Eenmalige betaling per gebruiker',
         pay: 'Betaling',
         save: 'Bespaar',
         hint: 'Gebruikt u het op het werk?<br>Vraag uw baas om<br>te betalen voor<br>toegankelijkheidssoftware.',
@@ -222,6 +227,7 @@ const locales = {
         corporate: '組織',
         one_time: '1回限りの支払い',
         price_per_user: 'ユーザーあたりの価格',
+        payment_description: 'ユーザーごとに1回限りの支払い',
         pay: '支払う',
         save: '節約',
         hint: '職場で使用していますか?<br>上司にアクセシビリティ<br>ソフトウェアの費用を負担<br>してもらいます。',
@@ -310,14 +316,19 @@ const htmlText = `
                 <a class="button-link button-link--paypal button-link--inactive js-link-paypal" href="${DEFAULT_LINK_PAYPAL}" target="_blank" rel="noopener" data-s="d-side-paypal">
                     <span class="button-link__text"><span data-text="pay_with">Pay with</span> <span class="button-link__text--paypal">PayPal</span></span>
                 </a>
-                <a class="button-link button-link--card button-link--inactive js-link-stripe" href="${DEFAULT_LINK_STRIPE}" target="_blank" rel="noopener" data-s="d-side-stripe">
+                <a class="button-link button-link--card js-link-stripe" href="${DEFAULT_LINK_STRIPE}" target="_blank" rel="noopener" data-s="d-side-stripe">
+                    <!--
                     <i class="button-link__card-icon js-card-icon"></i>
-                    <span class="button-link__text" data-text="card">Debit or Credit Card</span>
+                    -->
+                    <span class="button-link__text ">
+                        <span data-text="pay">Pay</span>
+                        <span class="js-price-regular">${DEFAULT_PRICE_REGULAR}</span>
+                    </span>
                 </a>
                 <a class="button-link button-link--other button-link--inactive js-link-other" href="${Links.Redirect.CORPORATE}" target="_blank" rel="noopener" data-s="d-side-other">
                     <span class="button-link__text" data-text="more">Contact us</span>
                 </a>
-                <a class="button-link button-link--paddle js-link-paddle" href="#pay" data-s="d-side-paddle">
+                <a class="button-link button-link--paddle button-link--inactive js-link-paddle" href="#pay" data-s="d-side-paddle">
                     <span class="button-link__text">
                         <span data-text="pay">Pay</span>
                         <span class="${offer ? 'js-price-discount' : 'js-price-regular'}">${offer ? DEFAULT_PRICE_DISCOUNT : DEFAULT_PRICE_REGULAR}</span>
@@ -731,6 +742,7 @@ const cssText = `
     display: none;
 }
 .button-link--card .button-link__text {
+    font-weight: bold;
     text-transform: none;
     transform: none;
 }
@@ -849,11 +861,13 @@ const cssText = `
 .payment-methods__paypal {
     aspect-ratio: 101 / 32;
     background-image: url(/images/paypal-logo-white.svg);
+    display: none !important;
     height: 1rem;
 }
 .payment-methods__gpay {
     aspect-ratio: 41 / 17;
     background-image: url(/images/icon-gpay.svg);
+    display: none !important;
     height: 1rem;
 }
 .payment-methods__visa {
